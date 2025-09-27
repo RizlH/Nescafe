@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Nescafe.Models
 {
-    internal class balance
+    internal class Balance
     {
-        public int Id { get; set; }
-        public Member Member { get; set; }
+        public int Id { get; set; } 
+        public Member Member { get; set; } 
         public decimal amount { get; set; }
         public DateTime updateOn { get; set; }
         public string transactionName { get; set; }
-        public string flow { get; set; }
+        public string flow { get; set; } 
     }
 }
