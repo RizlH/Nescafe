@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Nescafe.Models
 {
-    public class access
+    public class Access
     {
         public int id { get; set; }
             [Required] public int memberid { get; set; }
