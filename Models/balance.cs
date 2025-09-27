@@ -13,6 +13,6 @@ namespace Nescafe.Models
         public decimal amount { get; set; }
         public DateTime updateOn { get; set; }
         public string transactionName { get; set; }
-        public string flow { get; set; }
+        public string flow { get; set; } 
     }
 }
