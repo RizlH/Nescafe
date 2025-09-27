@@ -18,6 +18,6 @@ namespace Nescafe.Models
         public decimal MaxAmount { get; set; } = 0;
         public int Tenor { get; set; }
         public DateTime UpdateOn { get; set; }
-
+        
     }
 }

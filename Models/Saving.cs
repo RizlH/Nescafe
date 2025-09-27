@@ -25,6 +25,6 @@ namespace Nescafe.Models
 
         [Required] public decimal TotalAmount { get; set; }
 
-
+        
     }
 }
