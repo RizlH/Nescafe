@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nescafe
 {
-    class access
+    internal class Access
     {
     }
 }
