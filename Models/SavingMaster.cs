@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nescafe.Models
 {
-    internal class SavingMaster
+    public class SavingMaster
     {
         public int Id { get; set; }
         public string Name { get; set; }
