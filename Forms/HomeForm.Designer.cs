@@ -117,6 +117,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.LANY;
             ClientSize = new Size(1168, 546);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
