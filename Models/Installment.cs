@@ -15,10 +15,5 @@ namespace Nescafe.Models
         [Required] public decimal amount { get; set; }
         public DateTime PaymentDate { get; set; } = DateTime.UtcNow;
         public string? ProofPath { get; set; }
-<<<<<<< HEAD
     } 
 }
-=======
-    }
-}
->>>>>>> 4967718ad46d9b8a01a632a10f2384c8b7aa8537
