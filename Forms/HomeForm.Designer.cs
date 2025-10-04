@@ -62,19 +62,20 @@
             // dashboardToolStripMenuItem
             // 
             dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            dashboardToolStripMenuItem.Size = new Size(207, 34);
+            dashboardToolStripMenuItem.Size = new Size(270, 34);
             dashboardToolStripMenuItem.Text = "Dashboard";
             // 
             // terminologiToolStripMenuItem
             // 
             terminologiToolStripMenuItem.Name = "terminologiToolStripMenuItem";
-            terminologiToolStripMenuItem.Size = new Size(207, 34);
+            terminologiToolStripMenuItem.Size = new Size(270, 34);
             terminologiToolStripMenuItem.Text = "Terminologi";
+            terminologiToolStripMenuItem.Click += terminologiToolStripMenuItem_Click;
             // 
             // logoutToolStripMenuItem
             // 
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(207, 34);
+            logoutToolStripMenuItem.Size = new Size(270, 34);
             logoutToolStripMenuItem.Text = "Logout";
             // 
             // profileToolStripMenuItem

@@ -14,7 +14,7 @@ namespace Nescafe.Forms
 {
     public partial class HomeForm : Form
     {
-        Member loggedMember;
+        Member? loggedMember;
         string title;
         public HomeForm(Member member)
         {
@@ -154,6 +154,11 @@ namespace Nescafe.Forms
             this.Text = title + " << Loan Page >>";
             route(new LoanPage(loggedMember));
         }
+
+        private void terminologiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-}
+

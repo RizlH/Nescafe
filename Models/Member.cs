@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Nescafe.Models
 {
-    internal class Member
+    public class Member
     {
         public int Id { get; set; }
         [Required, MaxLength(100)] public string Username { get; set; }
