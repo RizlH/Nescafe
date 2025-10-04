@@ -13,10 +13,18 @@ namespace Nescafe.Models
         [MaxLength(4000)] public string terminologi1 { get; set; }
         [MaxLength(4000)] public string terminologi2 { get; set; }
         [MaxLength(4000)] public string terminologi3 { get; set; }
+<<<<<<< HEAD
          
+=======
+
+>>>>>>> 4967718ad46d9b8a01a632a10f2384c8b7aa8537
         public decimal exchangeRate { get; set; }
         public decimal transferAcrossFee { get; set; }
         public decimal transferInhouseFee { get; set; }
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 4967718ad46d9b8a01a632a10f2384c8b7aa8537
