@@ -328,7 +328,6 @@
             Controls.Add(label2);
             Controls.Add(textName);
             Controls.Add(label1);
-            Name = "ProductPage";
             Size = new Size(1036, 518);
             Load += ProductPage_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridLoan).EndInit();
