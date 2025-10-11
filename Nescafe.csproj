@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Forms\AdminMenus\" />
     <Folder Include="Forms\Alerts\" />
     <Folder Include="Migrations\" />
     <Folder Include="Utilities\" />
