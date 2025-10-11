@@ -12,7 +12,6 @@
     <Folder Include="Data\" />
     <Folder Include="Forms\AdminMenus\" />
     <Folder Include="Forms\Alerts\" />
-    <Folder Include="Forms\PublicMenus\" />
     <Folder Include="Migrations\" />
     <Folder Include="Utilities\" />
     <Folder Include="Services\" />
