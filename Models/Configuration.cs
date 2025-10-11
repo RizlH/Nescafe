@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Nescafe.Models
 {
-    internal class Configuration
+    public class Configuration
     {
         public int Id { get; set; }
         [MaxLength(4000)] public string terminologi1 { get; set; }
