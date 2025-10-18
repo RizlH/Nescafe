@@ -4,7 +4,7 @@ using BraveHeroCooperation.Models;
 using Microsoft.EntityFrameworkCore;
 using Nescafe.Models;
 
-namespace BraveHeroCooperation.Services
+namespace Nescafe.Services
 {
     public class ProductService
     {
