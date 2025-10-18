@@ -138,6 +138,7 @@
             textLoanID.Name = "textLoanID";
             textLoanID.Size = new Size(196, 23);
             textLoanID.TabIndex = 7;
+            textLoanID.TextChanged += textLoanID_TextChanged;
             // 
             // comboBoxLoanType
             // 
@@ -146,6 +147,7 @@
             comboBoxLoanType.Name = "comboBoxLoanType";
             comboBoxLoanType.Size = new Size(196, 23);
             comboBoxLoanType.TabIndex = 8;
+            comboBoxLoanType.SelectedIndexChanged += comboBoxLoanType_SelectedIndexChanged;
             // 
             // textAdminFee
             // 
@@ -161,6 +163,7 @@
             textMinAmount.Name = "textMinAmount";
             textMinAmount.Size = new Size(196, 23);
             textMinAmount.TabIndex = 10;
+            textMinAmount.TextChanged += textMinAmount_TextChanged;
             // 
             // textInterestFine
             // 
@@ -168,6 +171,7 @@
             textInterestFine.Name = "textInterestFine";
             textInterestFine.Size = new Size(196, 23);
             textInterestFine.TabIndex = 11;
+            textInterestFine.TextChanged += textInterestFine_TextChanged;
             // 
             // textDueDate
             // 
@@ -175,6 +179,7 @@
             textDueDate.Name = "textDueDate";
             textDueDate.Size = new Size(196, 23);
             textDueDate.TabIndex = 12;
+            textDueDate.TextChanged += textDueDate_TextChanged;
             // 
             // textDocumentKK
             // 
@@ -182,6 +187,7 @@
             textDocumentKK.Name = "textDocumentKK";
             textDocumentKK.Size = new Size(196, 23);
             textDocumentKK.TabIndex = 13;
+            textDocumentKK.TextChanged += textDocumentKK_TextChanged;
             // 
             // textAmount
             // 
@@ -189,6 +195,7 @@
             textAmount.Name = "textAmount";
             textAmount.Size = new Size(196, 23);
             textAmount.TabIndex = 14;
+            textAmount.TextChanged += textAmount_TextChanged;
             // 
             // label8
             // 
@@ -250,6 +257,7 @@
             textInterest.Name = "textInterest";
             textInterest.Size = new Size(196, 23);
             textInterest.TabIndex = 21;
+            textInterest.TextChanged += textInterest_TextChanged;
             // 
             // textTenor
             // 
@@ -257,6 +265,7 @@
             textTenor.Name = "textTenor";
             textTenor.Size = new Size(196, 23);
             textTenor.TabIndex = 22;
+            textTenor.TextChanged += textTenor_TextChanged;
             // 
             // textMaxAmount
             // 
@@ -264,6 +273,7 @@
             textMaxAmount.Name = "textMaxAmount";
             textMaxAmount.Size = new Size(196, 23);
             textMaxAmount.TabIndex = 23;
+            textMaxAmount.TextChanged += textMaxAmount_TextChanged;
             // 
             // textDocumentKTP
             // 
@@ -271,6 +281,7 @@
             textDocumentKTP.Name = "textDocumentKTP";
             textDocumentKTP.Size = new Size(196, 23);
             textDocumentKTP.TabIndex = 24;
+            textDocumentKTP.TextChanged += textDocumentKTP_TextChanged;
             // 
             // textDocumentSlipGaji
             // 
@@ -278,6 +289,7 @@
             textDocumentSlipGaji.Name = "textDocumentSlipGaji";
             textDocumentSlipGaji.Size = new Size(196, 23);
             textDocumentSlipGaji.TabIndex = 25;
+            textDocumentSlipGaji.TextChanged += textDocumentSlipGaji_TextChanged;
             // 
             // buttonBrowseKK
             // 
@@ -287,6 +299,7 @@
             buttonBrowseKK.TabIndex = 26;
             buttonBrowseKK.Text = "Browse";
             buttonBrowseKK.UseVisualStyleBackColor = true;
+            buttonBrowseKK.Click += buttonBrowseKK_Click;
             // 
             // buttonShowKK
             // 
@@ -296,6 +309,7 @@
             buttonShowKK.TabIndex = 27;
             buttonShowKK.Text = "Show";
             buttonShowKK.UseVisualStyleBackColor = true;
+            buttonShowKK.Click += buttonShowKK_Click;
             // 
             // buttonBrowseKTP
             // 
@@ -305,6 +319,7 @@
             buttonBrowseKTP.TabIndex = 28;
             buttonBrowseKTP.Text = "Browse";
             buttonBrowseKTP.UseVisualStyleBackColor = true;
+            buttonBrowseKTP.Click += buttonBrowseKTP_Click;
             // 
             // buttonShowKTP
             // 
@@ -314,6 +329,7 @@
             buttonShowKTP.TabIndex = 29;
             buttonShowKTP.Text = "Show";
             buttonShowKTP.UseVisualStyleBackColor = true;
+            buttonShowKTP.Click += buttonShowKTP_Click;
             // 
             // buttonBrowseSlipGaji
             // 
@@ -323,6 +339,7 @@
             buttonBrowseSlipGaji.TabIndex = 30;
             buttonBrowseSlipGaji.Text = "Browse";
             buttonBrowseSlipGaji.UseVisualStyleBackColor = true;
+            buttonBrowseSlipGaji.Click += buttonBrowseSlipGaji_Click;
             // 
             // buttonShowSlipGaji
             // 
@@ -332,6 +349,7 @@
             buttonShowSlipGaji.TabIndex = 31;
             buttonShowSlipGaji.Text = "Show";
             buttonShowSlipGaji.UseVisualStyleBackColor = true;
+            buttonShowSlipGaji.Click += buttonShowSlipGaji_Click;
             // 
             // buttonApplyLoan
             // 
@@ -341,6 +359,7 @@
             buttonApplyLoan.TabIndex = 32;
             buttonApplyLoan.Text = "Apply Loan";
             buttonApplyLoan.UseVisualStyleBackColor = true;
+            buttonApplyLoan.Click += buttonApplyLoan_Click;
             // 
             // buttonNewLoan
             // 
@@ -350,6 +369,7 @@
             buttonNewLoan.TabIndex = 33;
             buttonNewLoan.Text = "New Loan";
             buttonNewLoan.UseVisualStyleBackColor = true;
+            buttonNewLoan.Click += buttonNewLoan_Click;
             // 
             // labelID
             // 
@@ -386,6 +406,7 @@
             dataGridLoan.Name = "dataGridLoan";
             dataGridLoan.Size = new Size(503, 399);
             dataGridLoan.TabIndex = 37;
+            dataGridLoan.CellContentClick += dataGridLoan_CellContentClick;
             // 
             // LoanPage
             // 
@@ -431,6 +452,7 @@
             Controls.Add(label1);
             Name = "LoanPage";
             Size = new Size(990, 556);
+            Load += LoanPage_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridLoan).EndInit();
             ResumeLayout(false);
             PerformLayout();
