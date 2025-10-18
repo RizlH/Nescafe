@@ -1,6 +1,6 @@
 ﻿using System;
-using BraveHeroCooperation.Data;
-using BraveHeroCooperation.Models;
+using Nescafe.Data;
+using Nescafe.Models;
 using Microsoft.EntityFrameworkCore;
 using Nescafe.Models;
 
