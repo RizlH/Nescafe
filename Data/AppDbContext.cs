@@ -16,7 +16,7 @@ namespace Nescafe.Data
         public DbSet<Loan> Loans => Set<Loan>();
         public DbSet<Installment> Installments => Set<Installment>();
         public DbSet<Saving> Savings => Set<Saving>();
-        public DbSet<Inhouse> Inhouses => Set<Inhouse>();
+        public DbSet<Inhouse> Inhouse => Set<Inhouse>();
         public DbSet<Exchange> Exchanges => Set<Exchange>();
         public DbSet<Balance> Balances => Set<Balance>();
 
