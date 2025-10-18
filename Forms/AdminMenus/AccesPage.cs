@@ -1,5 +1,4 @@
-﻿using BraveHeroCooperation.Models;
-using Nescafe.Models;
+﻿using Nescafe.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
