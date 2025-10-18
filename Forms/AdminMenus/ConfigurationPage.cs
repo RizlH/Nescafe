@@ -1,4 +1,6 @@
-﻿using Nescafe.Services;
+﻿using Nescafe.Data;
+using Nescafe.Models;
+using Nescafe.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
