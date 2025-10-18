@@ -349,7 +349,6 @@
             buttonShowSlipGaji.TabIndex = 31;
             buttonShowSlipGaji.Text = "Show";
             buttonShowSlipGaji.UseVisualStyleBackColor = true;
-            buttonShowSlipGaji.Click += buttonShowSlipGaji_Click;
             // 
             // buttonApplyLoan
             // 
@@ -359,7 +358,6 @@
             buttonApplyLoan.TabIndex = 32;
             buttonApplyLoan.Text = "Apply Loan";
             buttonApplyLoan.UseVisualStyleBackColor = true;
-            buttonApplyLoan.Click += buttonApplyLoan_Click;
             // 
             // buttonNewLoan
             // 
@@ -369,7 +367,6 @@
             buttonNewLoan.TabIndex = 33;
             buttonNewLoan.Text = "New Loan";
             buttonNewLoan.UseVisualStyleBackColor = true;
-            buttonNewLoan.Click += buttonNewLoan_Click;
             // 
             // labelID
             // 
@@ -406,7 +403,6 @@
             dataGridLoan.Name = "dataGridLoan";
             dataGridLoan.Size = new Size(503, 399);
             dataGridLoan.TabIndex = 37;
-            dataGridLoan.CellContentClick += dataGridLoan_CellContentClick;
             // 
             // LoanPage
             // 
