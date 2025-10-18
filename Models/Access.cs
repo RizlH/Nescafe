@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Nescafe.Models;
 
-namespace BraveHeroCooperation.Models
+namespace Nescafe.Models
 {
     public class Access
     {
