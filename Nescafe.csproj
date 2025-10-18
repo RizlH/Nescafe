@@ -13,7 +13,6 @@
     <Folder Include="Forms\Alerts\" />
     <Folder Include="Migrations\" />
     <Folder Include="Utilities\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,7 +34,6 @@
 
   <ItemGroup>
     <Folder Include="Util\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
