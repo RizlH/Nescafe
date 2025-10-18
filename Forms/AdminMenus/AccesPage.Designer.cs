@@ -29,44 +29,44 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            comboBox1 = new ComboBox();
+            comboMember = new ComboBox();
             label1 = new Label();
             label2 = new Label();
             btnSubmit = new Button();
             dataGridViewAccess = new DataGridView();
-            clbAccess = new CheckedListBox();
-            groupBox1 = new GroupBox();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            accessBindingSource = new BindingSource(components);
-            memberBindingSource = new BindingSource(components);
             Id = new DataGridViewTextBoxColumn();
             Member = new DataGridViewTextBoxColumn();
             AccessList = new DataGridViewTextBoxColumn();
             updateOn = new DataGridViewTextBoxColumn();
-            lblFullName = new Label();
-            lblJoinDate = new Label();
-            lblEmail = new Label();
-            lblPhone = new Label();
-            lblPhoneAlt = new Label();
+            groupBox1 = new GroupBox();
             lblAddress = new Label();
+            lblPhoneAlt = new Label();
+            lblPhone = new Label();
+            lblEmail = new Label();
+            lblJoinDate = new Label();
+            lblFullName = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            accessBindingSource = new BindingSource(components);
+            memberBindingSource = new BindingSource(components);
+            clbAccess = new CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewAccess).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)accessBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)memberBindingSource).BeginInit();
             SuspendLayout();
             // 
-            // comboBox1
+            // comboMember
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(27, 77);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(289, 33);
-            comboBox1.TabIndex = 0;
+            comboMember.FormattingEnabled = true;
+            comboMember.Location = new Point(27, 77);
+            comboMember.Name = "comboMember";
+            comboMember.Size = new Size(289, 33);
+            comboMember.TabIndex = 0;
             // 
             // label1
             // 
@@ -95,6 +95,7 @@
             btnSubmit.TabIndex = 3;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.Click += btnSubmit_Click;
             // 
             // dataGridViewAccess
             // 
@@ -105,91 +106,6 @@
             dataGridViewAccess.RowHeadersWidth = 62;
             dataGridViewAccess.Size = new Size(735, 537);
             dataGridViewAccess.TabIndex = 4;
-            // 
-            // clbAccess
-            // 
-            clbAccess.FormattingEnabled = true;
-            clbAccess.Items.AddRange(new object[] { "Grant All", "Loan", "Saving", "Transfer - Inhouse", "Transfer - Accross", "Exchange" });
-            clbAccess.Location = new Point(27, 116);
-            clbAccess.Name = "clbAccess";
-            clbAccess.Size = new Size(407, 172);
-            clbAccess.TabIndex = 5;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(lblAddress);
-            groupBox1.Controls.Add(lblPhoneAlt);
-            groupBox1.Controls.Add(lblPhone);
-            groupBox1.Controls.Add(lblEmail);
-            groupBox1.Controls.Add(lblJoinDate);
-            groupBox1.Controls.Add(lblFullName);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Location = new Point(27, 304);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(407, 304);
-            groupBox1.TabIndex = 6;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Details";
-            groupBox1.Enter += groupBox1_Enter;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(11, 33);
-            label3.Name = "label3";
-            label3.Size = new Size(91, 25);
-            label3.TabIndex = 0;
-            label3.Text = "Full Name";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(11, 75);
-            label4.Name = "label4";
-            label4.Size = new Size(85, 25);
-            label4.TabIndex = 1;
-            label4.Text = "Join Date";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(11, 117);
-            label5.Name = "label5";
-            label5.Size = new Size(54, 25);
-            label5.TabIndex = 2;
-            label5.Text = "Email";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(11, 163);
-            label6.Name = "label6";
-            label6.Size = new Size(62, 25);
-            label6.TabIndex = 3;
-            label6.Text = "Phone";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(11, 213);
-            label7.Name = "label7";
-            label7.Size = new Size(89, 25);
-            label7.TabIndex = 4;
-            label7.Text = "Phone Alt";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(11, 261);
-            label8.Name = "label8";
-            label8.Size = new Size(77, 25);
-            label8.TabIndex = 5;
-            label8.Text = "Address";
             // 
             // Id
             // 
@@ -219,41 +135,36 @@
             updateOn.Name = "updateOn";
             updateOn.Width = 150;
             // 
-            // lblFullName
+            // groupBox1
             // 
-            lblFullName.AutoSize = true;
-            lblFullName.Location = new Point(168, 33);
-            lblFullName.Name = "lblFullName";
-            lblFullName.Size = new Size(24, 25);
-            lblFullName.TabIndex = 6;
-            lblFullName.Text = "...";
+            groupBox1.Controls.Add(lblAddress);
+            groupBox1.Controls.Add(lblPhoneAlt);
+            groupBox1.Controls.Add(lblPhone);
+            groupBox1.Controls.Add(lblEmail);
+            groupBox1.Controls.Add(lblJoinDate);
+            groupBox1.Controls.Add(lblFullName);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Location = new Point(27, 304);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(407, 304);
+            groupBox1.TabIndex = 6;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Details";
+            groupBox1.Enter += groupBox1_Enter;
             // 
-            // lblJoinDate
+            // lblAddress
             // 
-            lblJoinDate.AutoSize = true;
-            lblJoinDate.Location = new Point(168, 75);
-            lblJoinDate.Name = "lblJoinDate";
-            lblJoinDate.Size = new Size(24, 25);
-            lblJoinDate.TabIndex = 7;
-            lblJoinDate.Text = "...";
-            // 
-            // lblEmail
-            // 
-            lblEmail.AutoSize = true;
-            lblEmail.Location = new Point(168, 117);
-            lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(24, 25);
-            lblEmail.TabIndex = 8;
-            lblEmail.Text = "...";
-            // 
-            // lblPhone
-            // 
-            lblPhone.AutoSize = true;
-            lblPhone.Location = new Point(168, 163);
-            lblPhone.Name = "lblPhone";
-            lblPhone.Size = new Size(24, 25);
-            lblPhone.TabIndex = 9;
-            lblPhone.Text = "...";
+            lblAddress.AutoSize = true;
+            lblAddress.Location = new Point(168, 261);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(24, 25);
+            lblAddress.TabIndex = 11;
+            lblAddress.Text = "...";
             // 
             // lblPhoneAlt
             // 
@@ -264,14 +175,105 @@
             lblPhoneAlt.TabIndex = 10;
             lblPhoneAlt.Text = "...";
             // 
-            // lblAddress
+            // lblPhone
             // 
-            lblAddress.AutoSize = true;
-            lblAddress.Location = new Point(168, 261);
-            lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(24, 25);
-            lblAddress.TabIndex = 11;
-            lblAddress.Text = "...";
+            lblPhone.AutoSize = true;
+            lblPhone.Location = new Point(168, 163);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(24, 25);
+            lblPhone.TabIndex = 9;
+            lblPhone.Text = "...";
+            // 
+            // lblEmail
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(168, 117);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(24, 25);
+            lblEmail.TabIndex = 8;
+            lblEmail.Text = "...";
+            // 
+            // lblJoinDate
+            // 
+            lblJoinDate.AutoSize = true;
+            lblJoinDate.Location = new Point(168, 75);
+            lblJoinDate.Name = "lblJoinDate";
+            lblJoinDate.Size = new Size(24, 25);
+            lblJoinDate.TabIndex = 7;
+            lblJoinDate.Text = "...";
+            // 
+            // lblFullName
+            // 
+            lblFullName.AutoSize = true;
+            lblFullName.Location = new Point(168, 33);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(24, 25);
+            lblFullName.TabIndex = 6;
+            lblFullName.Text = "...";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(11, 261);
+            label8.Name = "label8";
+            label8.Size = new Size(77, 25);
+            label8.TabIndex = 5;
+            label8.Text = "Address";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(11, 213);
+            label7.Name = "label7";
+            label7.Size = new Size(89, 25);
+            label7.TabIndex = 4;
+            label7.Text = "Phone Alt";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(11, 163);
+            label6.Name = "label6";
+            label6.Size = new Size(62, 25);
+            label6.TabIndex = 3;
+            label6.Text = "Phone";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(11, 117);
+            label5.Name = "label5";
+            label5.Size = new Size(54, 25);
+            label5.TabIndex = 2;
+            label5.Text = "Email";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(11, 75);
+            label4.Name = "label4";
+            label4.Size = new Size(85, 25);
+            label4.TabIndex = 1;
+            label4.Text = "Join Date";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(11, 33);
+            label3.Name = "label3";
+            label3.Size = new Size(91, 25);
+            label3.TabIndex = 0;
+            label3.Text = "Full Name";
+            // 
+            // clbAccess
+            // 
+            clbAccess.FormattingEnabled = true;
+            clbAccess.Items.AddRange(new object[] { "Grant All", "Loan", "Saving", "Transfer - Inhouse", "Transfer - Accross", "Exchange" });
+            clbAccess.Location = new Point(27, 116);
+            clbAccess.Name = "clbAccess";
+            clbAccess.Size = new Size(407, 172);
+            clbAccess.TabIndex = 5;
+            clbAccess.SelectedIndexChanged += clbAccess_SelectedIndexChanged;
             // 
             // AccesPage
             // 
@@ -283,7 +285,7 @@
             Controls.Add(btnSubmit);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(comboBox1);
+            Controls.Add(comboMember);
             Name = "AccesPage";
             Size = new Size(1202, 628);
             ((System.ComponentModel.ISupportInitialize)dataGridViewAccess).EndInit();
@@ -297,12 +299,11 @@
 
         #endregion
 
-        private ComboBox comboBox1;
+        private ComboBox comboMember;
         private Label label1;
         private Label label2;
         private Button btnSubmit;
         private DataGridView dataGridViewAccess;
-        private CheckedListBox clbAccess;
         private GroupBox groupBox1;
         private Label label8;
         private Label label7;
@@ -322,5 +323,6 @@
         private Label lblEmail;
         private Label lblJoinDate;
         private Label lblFullName;
+        private CheckedListBox clbAccess;
     }
 }
