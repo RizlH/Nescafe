@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BraveHeroCooperation.Data;
-using BraveHeroCooperation.Models;
+using Nescafe.Data;
+using Nescafe.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Nescafe.Services
 {
     public class AccessService
     {
-        private readonly AppDbContext_db;
+        private readonly AppDbContext _db;
         public AccessService(AppDbContext db) => _db = db;
         public async Task<Access?> GetAccess(int memberId)
         {
@@ -21,14 +21,15 @@ namespace Nescafe.Services
         }
         public object setGridView()
         {
-            var grid = _db.Accesses.OrderBy(x => x.MemberId).select(x => new
-            {
-                x.Id,
-                DisplayMember = x.Member.MemberId + "-" + x.Member.FullName,
-                x.AccessList,
-                x.updateOn
-            }).ToList();
-            return grid;
+            var grid = _db.Accesses.OrderBy(x => x.MemberId)
+                .Select(x => new
+                {
+                    x.Id,
+                    DisplayMember = x.Member.MemberId + "-" + x.Member.FullName,
+                    x.AccessList,
+                    x.updateOn
+                }).ToList();
+                return grid;
                
         }
         public Access? findByMember(int id)
@@ -42,11 +43,11 @@ namespace Nescafe.Services
             _db.Update(access);
             await _db.SaveChangesAsync();
         }
-        public async Task newOne(Access? access, MemberAccessException member, String accessList)
+        public async Task newOne(Access? access, Member member, String accessList)
         {
             var a = new Access
             {
-                member = member,
+                Member = member,
                 AccessList = accessList,
                 MemberId = member.Id,
                 updateOn = DateTime.UtcNow

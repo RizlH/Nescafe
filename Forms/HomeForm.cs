@@ -1,4 +1,8 @@
-﻿using BraveHeroCooperation.Models;
+﻿using Nescafe.Models;
+using Nescafe.Forms.PublicMenus;
+using Nescafe.Forms.AdminMenus;
+using Nescafe.Data;
+using Nescafe.Services;
 using Nescafe.Models;
 using System;
 using System.Collections.Generic;
@@ -36,33 +40,33 @@ namespace Nescafe.Forms
         {
             loanToolStripMenuItem.Enabled = false;
             savingToolStripMenuItem.Enabled = false;
-            inhouseToolStripMenuItem.Enabled = false;
-            acrossCooperationToolStripMenuItem.Enabled = false;
-            definitionsToolStripMenuItem.Enabled = false;
-            manualToolStripMenuItem.Enabled = false;
+            //inhouseToolStripMenuItem.Enabled = false;
+            //acrossCooperationToolStripMenuItem.Enabled = false;
+            //definitionsToolStripMenuItem.Enabled = false;
+           // manualToolStripMenuItem.Enabled = false;
             fileToolStripMenuItem.Enabled = false;
             dashboardToolStripMenuItem.Enabled = false;
             profileToolStripMenuItem.Enabled = false;
 
             loanToolStripMenuItem.ToolTipText = "Disabled";
             savingToolStripMenuItem.ToolTipText = "Disabled";
-            inhouseToolStripMenuItem.ToolTipText = "Disabled";
-            acrossCooperationToolStripMenuItem.ToolTipText = "Disabled";
+          //  inhouseToolStripMenuItem.ToolTipText = "Disabled";
+         //   acrossCooperationToolStripMenuItem.ToolTipText = "Disabled";
         }
 
         public void grantAllMenu()
         {
             loanToolStripMenuItem.Enabled = true;
             savingToolStripMenuItem.Enabled = true;
-            inhouseToolStripMenuItem.Enabled = true;
-            acrossCooperationToolStripMenuItem.Enabled = true;
+          //  inhouseToolStripMenuItem.Enabled = true;
+          //  acrossCooperationToolStripMenuItem.Enabled = true;
         }
 
         public void grantAccess()
         {
             AppDbContext db = new AppDbContext();
             AccessService accessService = new AccessService(db);
-            Access? access = accessService.FindByMember(loggedMember.Id);
+            Access? access = accessService.findByMember(loggedMember.Id);
             if (access != null)
             {
                 var listAccess = access.AccessList.Split(',');
@@ -87,25 +91,25 @@ namespace Nescafe.Forms
                         }
                     }
 
-                    foreach (ToolStripMenuItem menu in menuItem.Items)
-                    {
-                        if (menu.Text != null && menu.Text.Contains(accessSegment))
-                        {
-                            menu.Enabled = true;
-                            menu.ToolTipText = "";
-                        }
-                        else
-                        {
-                            foreach (ToolStripMenuItem submenu in menu.DropDownItems)
-                            {
-                                if (submenu.Text != null && submenu.Text.Contains(accessSegment))
-                                {
-                                    submenu.Enabled = true;
-                                    submenu.ToolTipText = "";
-                                }
-                            }
-                        }
-                    }
+                    //foreach (ToolStripMenuItem menu in menuItem.Items)
+                    //{
+                    //    if (menu.Text != null && menu.Text.Contains(accessSegment))
+                    //    {
+                    //        menu.Enabled = true;
+                    //        menu.ToolTipText = "";
+                    //    }
+                    //    else
+                    //    {
+                    //        foreach (ToolStripMenuItem submenu in menu.DropDownItems)
+                    //        {
+                    //            if (submenu.Text != null && submenu.Text.Contains(accessSegment))
+                    //            {
+                    //                submenu.Enabled = true;
+                    //                submenu.ToolTipText = "";
+                    //            }
+                    //        }
+                    //    }
+                    //}
                 }
             }
         }
@@ -146,7 +150,7 @@ namespace Nescafe.Forms
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Text = title + " << Profile Page >>";
-            route(new ProfilePage(loggedMember));
+            //route(new ProfilePage(loggedMember));
         }
 
         private void loanToolStripMenuItem_Click(object sender, EventArgs e)

@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Nescafe.Models;
 
 namespace Nescafe.Forms.PublicMenus
 {
     public partial class LoanPage : UserControl
     {
-        public LoanPage()
+        public LoanPage(Member member)
         {
             InitializeComponent();
         }

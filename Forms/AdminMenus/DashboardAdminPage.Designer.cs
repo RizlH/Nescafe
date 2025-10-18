@@ -404,6 +404,7 @@
             Controls.Add(pictureBox1);
             Name = "DashboardAdminPage";
             Size = new Size(886, 545);
+            Load += DashboardAdminPage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

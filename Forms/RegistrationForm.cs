@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Nescafe.Forms;
+using Nescafe.Services;
+using Nescafe.Data;
 
 namespace Nescafe
 {
@@ -27,7 +29,7 @@ namespace Nescafe
             if (member != null) {
                 this.Hide();
                 LoginForm loginForm = new LoginForm();
-                loginForm.setSuccessAlert("Registration Success! Please Login...");
+                loginForm.SetSuccessAlert("Registration Success! Please Login...");
                 loginForm.ShowDialog();
             } else {
                 labelError.Text = "Registration Failed!";

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Nescafe.Forms;
+using Nescafe.Data;
+using Nescafe.Services;
 
 
 namespace Nescafe.Forms

@@ -301,6 +301,7 @@
             Controls.Add(pictureBox1);
             Name = "DashboardPage";
             Size = new Size(866, 525);
+            Load += DashboardPage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();

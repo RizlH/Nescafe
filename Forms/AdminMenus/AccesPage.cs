@@ -1,4 +1,6 @@
-﻿using Nescafe.Models;
+﻿using Nescafe.Data;
+using Nescafe.Models;
+using Nescafe.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,7 +64,7 @@ namespace Nescafe.Forms.AdminMenus
         {
             for (int i = 0; i < clbAccess.Items.Count; i++)
             {
-                Access.SetItemChecked(i, false);
+                // Access.SetItemChecked(i, false);
             }
 
             comboMember.SelectedItem = null;
@@ -172,5 +174,9 @@ namespace Nescafe.Forms.AdminMenus
             }
         }
 
+        private void dataGridViewAccess_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
