@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Nescafe.Models
 {
-    internal class Inhouse
+    public class Inhouse
     {
         public int Id { get; set; }
         [Required] public int OriginId { get; set; }
