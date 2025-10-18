@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Nescafe.Forms
+namespace Nescafe.Forms.PublicMenus
 {
-    public partial class Home : Form
+    public partial class TerminologiPage : UserControl
     {
-        public Home()
+        public TerminologiPage()
         {
             InitializeComponent();
         }
+
+
     }
 }
