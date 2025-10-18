@@ -12,7 +12,7 @@ namespace Nescafe.Models
     {
         public int Id { get; set; }
         [Required] public int MemberId { get; set; }
-        public Member member { get; set; } = null!;
+        public Member Member { get; set; } = null!;
         [Required] public string AccessList { get; set; }
         public DateTime updateOn { get; set; }
     }
