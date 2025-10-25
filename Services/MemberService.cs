@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 using Nescafe.Data;
 using Nescafe.Models;
-using Nescafe.Models;
 
 namespace Nescafe.Services
 {
