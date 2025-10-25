@@ -151,6 +151,7 @@
             btnUpdate.TabIndex = 12;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // ConfigurationPage
             // 
@@ -171,6 +172,7 @@
             Controls.Add(label1);
             Name = "ConfigurationPage";
             Size = new Size(1260, 579);
+            Load += ConfigurationPage_Load;
             ResumeLayout(false);
             PerformLayout();
         }
