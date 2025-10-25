@@ -48,7 +48,7 @@
             // 
             labelMemberId.AutoEllipsis = true;
             labelMemberId.AutoSize = true;
-            labelMemberId.Location = new Point(20, 20);
+            labelMemberId.Location = new Point(10, 10);
             labelMemberId.Name = "labelMemberId";
             labelMemberId.Size = new Size(65, 15);
             labelMemberId.TabIndex = 0;
@@ -57,7 +57,7 @@
             // labelCardId
             // 
             labelCardId.AutoSize = true;
-            labelCardId.Location = new Point(20, 45);
+            labelCardId.Location = new Point(10, 40);
             labelCardId.Name = "labelCardId";
             labelCardId.Size = new Size(77, 15);
             labelCardId.TabIndex = 1;
@@ -66,7 +66,7 @@
             // labelFullName
             // 
             labelFullName.AutoSize = true;
-            labelFullName.Location = new Point(20, 70);
+            labelFullName.Location = new Point(10, 70);
             labelFullName.Name = "labelFullName";
             labelFullName.Size = new Size(61, 15);
             labelFullName.TabIndex = 2;
@@ -75,7 +75,7 @@
             // labelJoinDate
             // 
             labelJoinDate.AutoSize = true;
-            labelJoinDate.Location = new Point(20, 95);
+            labelJoinDate.Location = new Point(10, 100);
             labelJoinDate.Name = "labelJoinDate";
             labelJoinDate.Size = new Size(55, 15);
             labelJoinDate.TabIndex = 3;
@@ -84,7 +84,7 @@
             // labelEmail
             // 
             labelEmail.AutoSize = true;
-            labelEmail.Location = new Point(20, 120);
+            labelEmail.Location = new Point(10, 130);
             labelEmail.Name = "labelEmail";
             labelEmail.Size = new Size(36, 15);
             labelEmail.TabIndex = 4;
@@ -93,7 +93,7 @@
             // labelPhone
             // 
             labelPhone.AutoSize = true;
-            labelPhone.Location = new Point(20, 145);
+            labelPhone.Location = new Point(10, 160);
             labelPhone.Name = "labelPhone";
             labelPhone.Size = new Size(41, 15);
             labelPhone.TabIndex = 5;
@@ -102,7 +102,7 @@
             // labelPhoneAlt
             // 
             labelPhoneAlt.AutoSize = true;
-            labelPhoneAlt.Location = new Point(20, 170);
+            labelPhoneAlt.Location = new Point(10, 190);
             labelPhoneAlt.Name = "labelPhoneAlt";
             labelPhoneAlt.Size = new Size(59, 15);
             labelPhoneAlt.TabIndex = 6;
@@ -111,7 +111,7 @@
             // labelAddress
             // 
             labelAddress.AutoSize = true;
-            labelAddress.Location = new Point(20, 195);
+            labelAddress.Location = new Point(10, 220);
             labelAddress.Name = "labelAddress";
             labelAddress.Size = new Size(49, 15);
             labelAddress.TabIndex = 7;
@@ -120,7 +120,7 @@
             // labelStatus
             // 
             labelStatus.AutoSize = true;
-            labelStatus.Location = new Point(20, 220);
+            labelStatus.Location = new Point(10, 250);
             labelStatus.Name = "labelStatus";
             labelStatus.Size = new Size(39, 15);
             labelStatus.TabIndex = 8;
@@ -129,14 +129,14 @@
             // comboStatus
             // 
             comboStatus.FormattingEnabled = true;
-            comboStatus.Location = new Point(100, 217);
+            comboStatus.Location = new Point(10, 265);
             comboStatus.Name = "comboStatus";
             comboStatus.Size = new Size(150, 23);
             comboStatus.TabIndex = 9;
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(20, 255);
+            buttonUpdate.Location = new Point(10, 300);
             buttonUpdate.Name = "buttonUpdate";
             buttonUpdate.Size = new Size(75, 25);
             buttonUpdate.TabIndex = 10;
@@ -146,9 +146,9 @@
             // dataGridViewMember
             // 
             dataGridViewMember.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewMember.Location = new Point(300, 20);
+            dataGridViewMember.Location = new Point(182, 10);
             dataGridViewMember.Name = "dataGridViewMember";
-            dataGridViewMember.Size = new Size(480, 300);
+            dataGridViewMember.Size = new Size(500, 315);
             dataGridViewMember.TabIndex = 11;
             // 
             // MemberPage
@@ -168,7 +168,7 @@
             Controls.Add(buttonUpdate);
             Controls.Add(dataGridViewMember);
             Name = "MemberPage";
-            Size = new Size(820, 360);
+            Size = new Size(695, 335);
             ((System.ComponentModel.ISupportInitialize)dataGridViewMember).EndInit();
             ResumeLayout(false);
             PerformLayout();

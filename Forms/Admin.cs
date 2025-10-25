@@ -1,4 +1,5 @@
-﻿using Nescafe.Models;
+﻿using Nescafe.Forms.AdminMenus;
+using Nescafe.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,11 +22,11 @@ namespace Nescafe.Forms
             this.Text = "Nescafe (Administrator: " +
                 loggedMember.MemberId + "-" + loggedMember.FullName + ")";
         }
-        public void route(System.Windows.Forms.Control control)
+        public void route(Control control)
         {
-            this.panelDisplay.Control.Clear();
-            this.panelDisplay.Dock = DockStyle.Fill();
-            this.panelDisplay.Control.Add(control);
+            this.panelDisplay.Controls.Clear();
+            this.panelDisplay.Dock = DockStyle.Fill;
+            this.panelDisplay.Controls.Add(control);
         }
         private void Admin_Load(Object sender, EventArgs e)
         {
@@ -33,11 +34,11 @@ namespace Nescafe.Forms
         }
         private void accessToolStripMenuItem_Click(Object sender, EventArgs e)
         {
-            route(new AccessPage(loggedMember));
+            route(new AccesPage(loggedMember));
         }
         private void configurationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            route(new ConfigPage());
+            route(new ConfigurationPage());
         }
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -56,15 +57,12 @@ namespace Nescafe.Forms
         }
         private void acrossCooperationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            route(new AccrossPage());
+           // route(new AccrossPage());
         }
         private void approvalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            route(new ApprovalPage(loggedMember));
+          //  route(new ApprovalPage(loggedMember));
         }
-        private void Admin_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

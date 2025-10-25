@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Nescafe.Models;
 
-namespace BraveHeroCooperation.Models
+namespace Nescafe.Models
 {
     public class Access
     {
         public int Id { get; set; }
         [Required] public int MemberId { get; set; }
-        public Member member { get; set; } = null!;
+        public Member Member { get; set; } = null!;
         [Required] public string AccessList { get; set; }
         public DateTime updateOn { get; set; }
     }

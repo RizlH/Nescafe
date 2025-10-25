@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Nescafe.Models;
+using Nescafe.Services;
+using Nescafe.Data;
+using Nescafe.Forms;
 
 
 namespace Nescafe.Forms
@@ -42,7 +45,7 @@ namespace Nescafe.Forms
                 if (LoggedInUser.level == "admin")
                 {
                     this.Hide();
-                    var adminForm = new AdminForm(LoggedInUser);
+                    var adminForm = new Admin(LoggedInUser);
                     adminForm.ShowDialog();
                 }
                 else
@@ -74,7 +77,7 @@ namespace Nescafe.Forms
         private void LinkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            ForgotPasswordForm form = new ForgotPasswordForm();
+            ForgotPassword form = new ForgotPassword();
             form.ShowDialog();
         }
 

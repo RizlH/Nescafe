@@ -39,6 +39,7 @@
             tranferToolStripMenuItem = new ToolStripMenuItem();
             exchangeToolStripMenuItem = new ToolStripMenuItem();
             historyToolStripMenuItem = new ToolStripMenuItem();
+            panelDisplay = new Panel();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,20 +63,20 @@
             // dashboardToolStripMenuItem
             // 
             dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            dashboardToolStripMenuItem.Size = new Size(270, 34);
+            dashboardToolStripMenuItem.Size = new Size(207, 34);
             dashboardToolStripMenuItem.Text = "Dashboard";
             // 
             // terminologiToolStripMenuItem
             // 
             terminologiToolStripMenuItem.Name = "terminologiToolStripMenuItem";
-            terminologiToolStripMenuItem.Size = new Size(270, 34);
+            terminologiToolStripMenuItem.Size = new Size(207, 34);
             terminologiToolStripMenuItem.Text = "Terminologi";
             terminologiToolStripMenuItem.Click += terminologiToolStripMenuItem_Click;
             // 
             // logoutToolStripMenuItem
             // 
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(270, 34);
+            logoutToolStripMenuItem.Size = new Size(207, 34);
             logoutToolStripMenuItem.Text = "Logout";
             // 
             // profileToolStripMenuItem
@@ -114,12 +115,20 @@
             historyToolStripMenuItem.Size = new Size(85, 29);
             historyToolStripMenuItem.Text = "History";
             // 
+            // panelDisplay
+            // 
+            panelDisplay.Location = new Point(403, 134);
+            panelDisplay.Name = "panelDisplay";
+            panelDisplay.Size = new Size(300, 150);
+            panelDisplay.TabIndex = 1;
+            // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.LANY;
             ClientSize = new Size(1168, 546);
+            Controls.Add(panelDisplay);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "HomeForm";
@@ -144,5 +153,6 @@
         private ToolStripMenuItem tranferToolStripMenuItem;
         private ToolStripMenuItem exchangeToolStripMenuItem;
         private ToolStripMenuItem historyToolStripMenuItem;
+        private Panel panelDisplay;
     }
 }

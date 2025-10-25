@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Nescafe.Models;
 
 namespace Nescafe.Forms.AdminMenus
 {
     public partial class DashboardAdminPage : UserControl
     {
-        public DashboardAdminPage()
+        public DashboardAdminPage(Member member )
         {
             InitializeComponent();
         }
 
+        private void DashboardAdminPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

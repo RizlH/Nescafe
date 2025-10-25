@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BraveHeroCooperation.Models
+namespace Nescafe.Models
 {
     public class Loan
     {
