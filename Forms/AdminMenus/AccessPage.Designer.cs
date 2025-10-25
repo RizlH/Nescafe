@@ -1,6 +1,6 @@
 ﻿namespace Nescafe.Forms.AdminMenus
 {
-    partial class AccesPage
+    partial class AccessPage
     {
         /// <summary> 
         /// Required designer variable.
@@ -76,7 +76,6 @@
             label1.Size = new Size(79, 25);
             label1.TabIndex = 1;
             label1.Text = "Member";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -106,7 +105,7 @@
             dataGridViewAccess.RowHeadersWidth = 62;
             dataGridViewAccess.Size = new Size(735, 537);
             dataGridViewAccess.TabIndex = 4;
-            dataGridViewAccess.CellContentClick += dataGridViewAccess_CellContentClick_1;
+            dataGridViewAccess.CellContentClick += this.dataGridViewAccess_CellContentClick;
             // 
             // Id
             // 
@@ -156,7 +155,6 @@
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Details";
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // lblAddress
             // 
@@ -276,7 +274,7 @@
             clbAccess.TabIndex = 5;
             clbAccess.SelectedIndexChanged += clbAccess_SelectedIndexChanged;
             // 
-            // AccesPage
+            // AccessPage
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -287,8 +285,9 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(comboMember);
-            Name = "AccesPage";
-            Size = new Size(1202, 628);
+            Name = "AccessPage";
+            Size = new Size(1252, 668);
+            Load += AccesPage_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewAccess).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

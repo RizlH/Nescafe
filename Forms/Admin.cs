@@ -34,7 +34,7 @@ namespace Nescafe.Forms
         }
         private void accessToolStripMenuItem_Click(Object sender, EventArgs e)
         {
-            route(new AccesPage(loggedMember));
+            route(new AccessPage(loggedMember));
         }
         private void configurationToolStripMenuItem_Click(object sender, EventArgs e)
         {

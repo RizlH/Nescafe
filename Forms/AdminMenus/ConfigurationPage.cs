@@ -41,7 +41,7 @@ namespace Nescafe.Forms.AdminMenus
             }
         }
 
-        private async void btnUpdate_Click(object sender, EventArgs e)
+        private async void btnUpdate_Click_1(object sender, EventArgs e)
         {
             decimal exchangeRate = decimal.Parse(txtExchange.Text);
             decimal inhouseFee = decimal.Parse(txtInhouse.Text);
@@ -54,7 +54,7 @@ namespace Nescafe.Forms.AdminMenus
             MessageBox.Show("Configuration updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private async void ConfigurationPage_Load(object sender, EventArgs e)
+        private async void ConfigurationPage_Load_1(object sender, EventArgs e)
         {
             AppDbContext db = new AppDbContext();
             ConfigurationService service = new ConfigurationService(db);
@@ -68,19 +68,6 @@ namespace Nescafe.Forms.AdminMenus
                 txtInhouse.Text = config.transferInhouseFee.ToString();
                 txtAccross.Text = config.transferAcrossFee.ToString();
             }
-        }
-
-        private async void btnUpdate_Click(object sender, EventArgs e)
-        {
-            decimal exchangeRate = decimal.Parse(txtExchange.Text);
-            decimal inhouseFee = decimal.Parse(txtInhouse.Text);
-            decimal accrossFee = decimal.Parse(txtAccross.Text);
-
-            AppDbContext db = new AppDbContext();
-            ConfigurationService service = new ConfigurationService(db);
-            await service.addOrUpdate(txtTerm1.Text, txtTerm2.Text,
-                txtTerm3.Text, exchangeRate, inhouseFee, accrossFee);
-            MessageBox.Show("Configuration updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
