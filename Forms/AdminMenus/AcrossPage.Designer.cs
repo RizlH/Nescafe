@@ -43,16 +43,16 @@
             dataGridView1.Location = new Point(25, 21);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(441, 260);
+            dataGridView1.Size = new Size(510, 260);
             dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(486, 21);
+            dataGridView2.Location = new Point(541, 21);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(473, 260);
+            dataGridView2.Size = new Size(418, 260);
             dataGridView2.TabIndex = 1;
             // 
             // npgsqlDataAdapter1
