@@ -11,7 +11,7 @@ namespace Nescafe.Api.Connectors
     public class ConnectorGet
     {
         private readonly HttpClient _httpClient = new HttpClient();
-        private String _baseUrl = "http://localhost:20254";
+        private String _baseUrl = "http://localhost:20254/";
 
         public async Task<CoopApiResponse?> GetCoopAsync()
         {
