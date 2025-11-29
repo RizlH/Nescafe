@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            dataGridView2 = new DataGridView();
+            dgvCoop = new DataGridView();
+            dgvBalance = new DataGridView();
             npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
-            dataGridView3 = new DataGridView();
+            dgvTransfer = new DataGridView();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             buttonRefresh = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCoop).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvBalance).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTransfer).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvCoop
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(25, 51);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(510, 228);
-            dataGridView1.TabIndex = 0;
+            dgvCoop.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCoop.Location = new Point(25, 51);
+            dgvCoop.Name = "dgvCoop";
+            dgvCoop.RowHeadersWidth = 51;
+            dgvCoop.Size = new Size(510, 228);
+            dgvCoop.TabIndex = 0;
             // 
-            // dataGridView2
+            // dgvBalance
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(541, 51);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(403, 228);
-            dataGridView2.TabIndex = 1;
+            dgvBalance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvBalance.Location = new Point(541, 51);
+            dgvBalance.Name = "dgvBalance";
+            dgvBalance.RowHeadersWidth = 51;
+            dgvBalance.Size = new Size(403, 228);
+            dgvBalance.TabIndex = 1;
             // 
             // npgsqlDataAdapter1
             // 
@@ -66,14 +66,14 @@
             npgsqlDataAdapter1.SelectCommand = null;
             npgsqlDataAdapter1.UpdateCommand = null;
             // 
-            // dataGridView3
+            // dgvTransfer
             // 
-            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Location = new Point(25, 326);
-            dataGridView3.Name = "dataGridView3";
-            dataGridView3.RowHeadersWidth = 51;
-            dataGridView3.Size = new Size(919, 184);
-            dataGridView3.TabIndex = 2;
+            dgvTransfer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTransfer.Location = new Point(25, 326);
+            dgvTransfer.Name = "dgvTransfer";
+            dgvTransfer.RowHeadersWidth = 51;
+            dgvTransfer.Size = new Size(919, 184);
+            dgvTransfer.TabIndex = 2;
             // 
             // label1
             // 
@@ -119,24 +119,25 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(dataGridView3);
-            Controls.Add(dataGridView2);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvTransfer);
+            Controls.Add(dgvBalance);
+            Controls.Add(dgvCoop);
             Name = "AcrossPage";
             Size = new Size(986, 575);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
+            Load += AcrossPage_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvCoop).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvBalance).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTransfer).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
-        private DataGridView dataGridView2;
+        private DataGridView dgvCoop;
+        private DataGridView dgvBalance;
         private Npgsql.NpgsqlDataAdapter npgsqlDataAdapter1;
-        private DataGridView dataGridView3;
+        private DataGridView dgvTransfer;
         private Label label1;
         private Label label2;
         private Label label3;

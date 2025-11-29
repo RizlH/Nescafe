@@ -44,6 +44,12 @@ namespace Nescafe.Services
             }
             await _db.SaveChangesAsync();
         }
+
+        public async void Update(Configuration config)
+        {
+            _db.Configurations.Update(config);
+            await _db.SaveChangesAsync();
+        }
     }
 }
 
