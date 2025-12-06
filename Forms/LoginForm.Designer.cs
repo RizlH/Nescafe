@@ -42,10 +42,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(563, 96);
+            label1.Font = new Font("Stencil", 30F, FontStyle.Bold);
+            label1.Location = new Point(597, 152);
             label1.Name = "label1";
-            label1.Size = new Size(87, 30);
+            label1.Size = new Size(174, 59);
             label1.TabIndex = 0;
             label1.Text = "LOGIN";
             // 
@@ -53,9 +53,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(434, 141);
+            label2.Location = new Point(496, 269);
             label2.Name = "label2";
-            label2.Size = new Size(80, 20);
+            label2.Size = new Size(101, 25);
             label2.TabIndex = 1;
             label2.Text = "Username";
             // 
@@ -63,33 +63,35 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(434, 218);
+            label3.Location = new Point(496, 339);
             label3.Name = "label3";
-            label3.Size = new Size(76, 20);
+            label3.Size = new Size(97, 25);
             label3.TabIndex = 2;
             label3.Text = "Password";
             // 
             // textUsername
             // 
-            textUsername.Location = new Point(434, 164);
+            textUsername.Location = new Point(496, 308);
+            textUsername.Margin = new Padding(3, 4, 3, 4);
             textUsername.Name = "textUsername";
-            textUsername.Size = new Size(311, 23);
+            textUsername.Size = new Size(355, 27);
             textUsername.TabIndex = 3;
             // 
             // textPassword
             // 
-            textPassword.Location = new Point(434, 241);
+            textPassword.Location = new Point(496, 368);
+            textPassword.Margin = new Padding(3, 4, 3, 4);
             textPassword.Name = "textPassword";
-            textPassword.Size = new Size(311, 23);
+            textPassword.Size = new Size(355, 27);
             textPassword.TabIndex = 4;
             // 
             // labelSuccess
             // 
             labelSuccess.AutoSize = true;
             labelSuccess.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelSuccess.Location = new Point(434, 38);
+            labelSuccess.Location = new Point(496, 51);
             labelSuccess.Name = "labelSuccess";
-            labelSuccess.Size = new Size(25, 20);
+            labelSuccess.Size = new Size(32, 25);
             labelSuccess.TabIndex = 5;
             labelSuccess.Text = "....";
             // 
@@ -97,9 +99,9 @@
             // 
             LinkForgotPassword.AutoSize = true;
             LinkForgotPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkForgotPassword.Location = new Point(638, 339);
+            LinkForgotPassword.Location = new Point(716, 419);
             LinkForgotPassword.Name = "LinkForgotPassword";
-            LinkForgotPassword.Size = new Size(107, 17);
+            LinkForgotPassword.Size = new Size(135, 23);
             LinkForgotPassword.TabIndex = 6;
             LinkForgotPassword.TabStop = true;
             LinkForgotPassword.Text = "Forgot Password";
@@ -108,9 +110,10 @@
             // buttonSubmit
             // 
             buttonSubmit.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonSubmit.Location = new Point(434, 293);
+            buttonSubmit.Location = new Point(496, 419);
+            buttonSubmit.Margin = new Padding(3, 4, 3, 4);
             buttonSubmit.Name = "buttonSubmit";
-            buttonSubmit.Size = new Size(86, 35);
+            buttonSubmit.Size = new Size(98, 47);
             buttonSubmit.TabIndex = 7;
             buttonSubmit.Text = "Submit";
             buttonSubmit.UseVisualStyleBackColor = true;
@@ -119,9 +122,10 @@
             // buttonRegistration
             // 
             buttonRegistration.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonRegistration.Location = new Point(434, 378);
+            buttonRegistration.Location = new Point(496, 504);
+            buttonRegistration.Margin = new Padding(3, 4, 3, 4);
             buttonRegistration.Name = "buttonRegistration";
-            buttonRegistration.Size = new Size(108, 35);
+            buttonRegistration.Size = new Size(136, 47);
             buttonRegistration.TabIndex = 8;
             buttonRegistration.Text = "Registration";
             buttonRegistration.UseVisualStyleBackColor = true;
@@ -129,9 +133,9 @@
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(buttonRegistration);
             Controls.Add(buttonSubmit);
             Controls.Add(LinkForgotPassword);
@@ -141,6 +145,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "LoginForm";
             Text = "LoginForm";
             ResumeLayout(false);
