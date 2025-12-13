@@ -39,8 +39,10 @@ namespace Nescafe.Forms.PublicMenus
                 decimal amount = Convert.ToDecimal(tbAmount.Text);
                 decimal rate = Convert.ToDecimal(tbRate.Text);
                 decimal fee = Convert.ToDecimal(tbFee.Text);
-                decimal total = (amount * rate) + fee;
+                decimal subTotal = amount * rate;
+                decimal total = subTotal - fee;
                 tbTotal.Text = total.ToString("0.00");
+                tbSubTotal.Text = subTotal.ToString("0.00");
             }
             catch (Exception)
             {

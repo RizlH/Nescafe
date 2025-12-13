@@ -94,7 +94,7 @@ namespace Nescafe.Services
             return await _db.SavingMasters.FirstOrDefaultAsync(lm => lm.Id == id);
         }
 
-        public object SetDropDownLoan()
+        public object SetDropDownSaving()
         {
             var data = _db.LoanMasters.OrderBy(x => x.Name)
                 .Select(x => new

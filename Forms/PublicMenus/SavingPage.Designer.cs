@@ -28,409 +28,455 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
-            txtSavingID = new TextBox();
+            textSavingId = new TextBox();
             label2 = new Label();
-            cmbSavingType = new ComboBox();
-            txtAdminFee = new TextBox();
+            comboSavingMaster = new ComboBox();
+            textAdminFee = new TextBox();
             label3 = new Label();
-            txtMinAmount = new TextBox();
+            textMinAmount = new TextBox();
             label4 = new Label();
-            txtInterestFine = new TextBox();
+            textInterestFine = new TextBox();
             label5 = new Label();
-            txtDueDate = new TextBox();
+            textDueDate = new TextBox();
             label6 = new Label();
-            txtDocumentKK = new TextBox();
+            textDocKK = new TextBox();
             label7 = new Label();
-            btnBrowseKK = new Button();
-            btnShowKK = new Button();
-            txtAmount = new TextBox();
+            buttonFileKK = new Button();
+            buttonShowDocKk = new Button();
+            textAmount = new TextBox();
             label8 = new Label();
-            txtInterest = new TextBox();
+            textInterest = new TextBox();
             label9 = new Label();
-            txtTenor = new TextBox();
+            textTenor = new TextBox();
             label10 = new Label();
-            txtMaxAmount = new TextBox();
+            textMaxAmount = new TextBox();
             label11 = new Label();
-            txtDocumentKTP = new TextBox();
+            textDocKtp = new TextBox();
             label12 = new Label();
-            btnShowKTP = new Button();
-            btnBrowseKTP = new Button();
-            btnShowSlip = new Button();
-            btnBrowseSlip = new Button();
-            txtDocumentSlip = new TextBox();
+            buttonShowDocKtp = new Button();
+            buttonFileKTP = new Button();
+            buttonShowDocSlip = new Button();
+            buttonFileSlip = new Button();
+            textDocSlip = new TextBox();
             label13 = new Label();
-            btnApplySaving = new Button();
-            btnNewSaving = new Button();
-            dgvSaving = new DataGridView();
+            buttonApply = new Button();
+            buttonNewSaving = new Button();
+            dataGriedViewSaving = new DataGridView();
             label14 = new Label();
-            btnReload = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgvSaving).BeginInit();
+            buttonReload = new Button();
+            labelId = new Label();
+            loanMasterBindingSource = new BindingSource(components);
+            loanBindingSource = new BindingSource(components);
+            ((System.ComponentModel.ISupportInitialize)dataGriedViewSaving).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)loanMasterBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)loanBindingSource).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(28, 29);
+            label1.Location = new Point(24, 22);
             label1.Name = "label1";
-            label1.Size = new Size(72, 20);
+            label1.Size = new Size(56, 15);
             label1.TabIndex = 0;
             label1.Text = "Saving ID";
-            label1.Click += label1_Click;
             // 
-            // txtSavingID
+            // textSavingId
             // 
-            txtSavingID.Location = new Point(28, 52);
-            txtSavingID.Name = "txtSavingID";
-            txtSavingID.ReadOnly = true;
-            txtSavingID.Size = new Size(248, 27);
-            txtSavingID.TabIndex = 1;
+            textSavingId.Location = new Point(24, 39);
+            textSavingId.Margin = new Padding(3, 2, 3, 2);
+            textSavingId.Name = "textSavingId";
+            textSavingId.ReadOnly = true;
+            textSavingId.Size = new Size(218, 23);
+            textSavingId.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(28, 94);
+            label2.Location = new Point(24, 70);
             label2.Name = "label2";
-            label2.Size = new Size(88, 20);
+            label2.Size = new Size(70, 15);
             label2.TabIndex = 2;
             label2.Text = "Saving Type";
             // 
-            // cmbSavingType
+            // comboSavingMaster
             // 
-            cmbSavingType.FormattingEnabled = true;
-            cmbSavingType.Location = new Point(28, 117);
-            cmbSavingType.Name = "cmbSavingType";
-            cmbSavingType.Size = new Size(248, 28);
-            cmbSavingType.TabIndex = 4;
+            comboSavingMaster.FormattingEnabled = true;
+            comboSavingMaster.Location = new Point(24, 88);
+            comboSavingMaster.Margin = new Padding(3, 2, 3, 2);
+            comboSavingMaster.Name = "comboSavingMaster";
+            comboSavingMaster.Size = new Size(218, 23);
+            comboSavingMaster.TabIndex = 4;
             // 
-            // txtAdminFee
+            // textAdminFee
             // 
-            txtAdminFee.Location = new Point(28, 187);
-            txtAdminFee.Name = "txtAdminFee";
-            txtAdminFee.ReadOnly = true;
-            txtAdminFee.Size = new Size(248, 27);
-            txtAdminFee.TabIndex = 6;
+            textAdminFee.Location = new Point(24, 140);
+            textAdminFee.Margin = new Padding(3, 2, 3, 2);
+            textAdminFee.Name = "textAdminFee";
+            textAdminFee.ReadOnly = true;
+            textAdminFee.Size = new Size(218, 23);
+            textAdminFee.TabIndex = 6;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(28, 164);
+            label3.Location = new Point(24, 123);
             label3.Name = "label3";
-            label3.Size = new Size(80, 20);
+            label3.Size = new Size(64, 15);
             label3.TabIndex = 5;
             label3.Text = "Admin Fee";
             // 
-            // txtMinAmount
+            // textMinAmount
             // 
-            txtMinAmount.Location = new Point(28, 258);
-            txtMinAmount.Name = "txtMinAmount";
-            txtMinAmount.ReadOnly = true;
-            txtMinAmount.Size = new Size(248, 27);
-            txtMinAmount.TabIndex = 8;
+            textMinAmount.Location = new Point(24, 194);
+            textMinAmount.Margin = new Padding(3, 2, 3, 2);
+            textMinAmount.Name = "textMinAmount";
+            textMinAmount.ReadOnly = true;
+            textMinAmount.Size = new Size(218, 23);
+            textMinAmount.TabIndex = 8;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(28, 235);
+            label4.Location = new Point(24, 176);
             label4.Name = "label4";
-            label4.Size = new Size(91, 20);
+            label4.Size = new Size(75, 15);
             label4.TabIndex = 7;
             label4.Text = "Min Amount";
             // 
-            // txtInterestFine
+            // textInterestFine
             // 
-            txtInterestFine.Location = new Point(28, 329);
-            txtInterestFine.Name = "txtInterestFine";
-            txtInterestFine.ReadOnly = true;
-            txtInterestFine.Size = new Size(248, 27);
-            txtInterestFine.TabIndex = 10;
+            textInterestFine.Location = new Point(24, 247);
+            textInterestFine.Margin = new Padding(3, 2, 3, 2);
+            textInterestFine.Name = "textInterestFine";
+            textInterestFine.ReadOnly = true;
+            textInterestFine.Size = new Size(218, 23);
+            textInterestFine.TabIndex = 10;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(28, 306);
+            label5.Location = new Point(24, 230);
             label5.Name = "label5";
-            label5.Size = new Size(89, 20);
+            label5.Size = new Size(71, 15);
             label5.TabIndex = 9;
             label5.Text = "Interest Fine";
             // 
-            // txtDueDate
+            // textDueDate
             // 
-            txtDueDate.Location = new Point(28, 392);
-            txtDueDate.Name = "txtDueDate";
-            txtDueDate.Size = new Size(248, 27);
-            txtDueDate.TabIndex = 12;
+            textDueDate.Location = new Point(24, 294);
+            textDueDate.Margin = new Padding(3, 2, 3, 2);
+            textDueDate.Name = "textDueDate";
+            textDueDate.Size = new Size(218, 23);
+            textDueDate.TabIndex = 12;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(28, 369);
+            label6.Location = new Point(24, 277);
             label6.Name = "label6";
-            label6.Size = new Size(72, 20);
+            label6.Size = new Size(55, 15);
             label6.TabIndex = 11;
             label6.Text = "Due Date";
             // 
-            // txtDocumentKK
+            // textDocKK
             // 
-            txtDocumentKK.Location = new Point(28, 455);
-            txtDocumentKK.Name = "txtDocumentKK";
-            txtDocumentKK.ReadOnly = true;
-            txtDocumentKK.Size = new Size(248, 27);
-            txtDocumentKK.TabIndex = 14;
+            textDocKK.Location = new Point(24, 341);
+            textDocKK.Margin = new Padding(3, 2, 3, 2);
+            textDocKK.Name = "textDocKK";
+            textDocKK.ReadOnly = true;
+            textDocKK.Size = new Size(218, 23);
+            textDocKK.TabIndex = 14;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(28, 432);
+            label7.Location = new Point(24, 324);
             label7.Name = "label7";
-            label7.Size = new Size(100, 20);
+            label7.Size = new Size(80, 15);
             label7.TabIndex = 13;
             label7.Text = "Document KK";
             // 
-            // btnBrowseKK
+            // buttonFileKK
             // 
-            btnBrowseKK.Location = new Point(28, 488);
-            btnBrowseKK.Name = "btnBrowseKK";
-            btnBrowseKK.Size = new Size(94, 29);
-            btnBrowseKK.TabIndex = 15;
-            btnBrowseKK.Text = "Browse";
-            btnBrowseKK.UseVisualStyleBackColor = true;
+            buttonFileKK.Location = new Point(24, 366);
+            buttonFileKK.Margin = new Padding(3, 2, 3, 2);
+            buttonFileKK.Name = "buttonFileKK";
+            buttonFileKK.Size = new Size(82, 22);
+            buttonFileKK.TabIndex = 15;
+            buttonFileKK.Text = "Browse";
+            buttonFileKK.UseVisualStyleBackColor = true;
+            buttonFileKK.Click += buttonFileKK_Click;
             // 
-            // btnShowKK
+            // buttonShowDocKk
             // 
-            btnShowKK.Location = new Point(182, 488);
-            btnShowKK.Name = "btnShowKK";
-            btnShowKK.Size = new Size(94, 29);
-            btnShowKK.TabIndex = 16;
-            btnShowKK.Text = "Show";
-            btnShowKK.UseVisualStyleBackColor = true;
+            buttonShowDocKk.Location = new Point(159, 366);
+            buttonShowDocKk.Margin = new Padding(3, 2, 3, 2);
+            buttonShowDocKk.Name = "buttonShowDocKk";
+            buttonShowDocKk.Size = new Size(82, 22);
+            buttonShowDocKk.TabIndex = 16;
+            buttonShowDocKk.Text = "Show";
+            buttonShowDocKk.UseVisualStyleBackColor = true;
             // 
-            // txtAmount
+            // textAmount
             // 
-            txtAmount.Location = new Point(364, 52);
-            txtAmount.Name = "txtAmount";
-            txtAmount.Size = new Size(248, 27);
-            txtAmount.TabIndex = 18;
+            textAmount.Location = new Point(318, 39);
+            textAmount.Margin = new Padding(3, 2, 3, 2);
+            textAmount.Name = "textAmount";
+            textAmount.Size = new Size(218, 23);
+            textAmount.TabIndex = 18;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(364, 29);
+            label8.Location = new Point(318, 22);
             label8.Name = "label8";
-            label8.Size = new Size(62, 20);
+            label8.Size = new Size(51, 15);
             label8.TabIndex = 17;
             label8.Text = "Amount";
             // 
-            // txtInterest
+            // textInterest
             // 
-            txtInterest.Location = new Point(364, 117);
-            txtInterest.Name = "txtInterest";
-            txtInterest.ReadOnly = true;
-            txtInterest.Size = new Size(248, 27);
-            txtInterest.TabIndex = 20;
+            textInterest.Location = new Point(318, 88);
+            textInterest.Margin = new Padding(3, 2, 3, 2);
+            textInterest.Name = "textInterest";
+            textInterest.ReadOnly = true;
+            textInterest.Size = new Size(218, 23);
+            textInterest.TabIndex = 20;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(364, 95);
+            label9.Location = new Point(318, 71);
             label9.Name = "label9";
-            label9.Size = new Size(58, 20);
+            label9.Size = new Size(46, 15);
             label9.TabIndex = 19;
             label9.Text = "Interest";
             // 
-            // txtTenor
+            // textTenor
             // 
-            txtTenor.Location = new Point(364, 187);
-            txtTenor.Name = "txtTenor";
-            txtTenor.ReadOnly = true;
-            txtTenor.Size = new Size(248, 27);
-            txtTenor.TabIndex = 22;
+            textTenor.Location = new Point(318, 140);
+            textTenor.Margin = new Padding(3, 2, 3, 2);
+            textTenor.Name = "textTenor";
+            textTenor.ReadOnly = true;
+            textTenor.Size = new Size(218, 23);
+            textTenor.TabIndex = 22;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(364, 164);
+            label10.Location = new Point(318, 123);
             label10.Name = "label10";
-            label10.Size = new Size(46, 20);
+            label10.Size = new Size(37, 15);
             label10.TabIndex = 21;
             label10.Text = "Tenor";
             // 
-            // txtMaxAmount
+            // textMaxAmount
             // 
-            txtMaxAmount.Location = new Point(364, 258);
-            txtMaxAmount.Name = "txtMaxAmount";
-            txtMaxAmount.ReadOnly = true;
-            txtMaxAmount.Size = new Size(248, 27);
-            txtMaxAmount.TabIndex = 24;
+            textMaxAmount.Location = new Point(318, 194);
+            textMaxAmount.Margin = new Padding(3, 2, 3, 2);
+            textMaxAmount.Name = "textMaxAmount";
+            textMaxAmount.ReadOnly = true;
+            textMaxAmount.Size = new Size(218, 23);
+            textMaxAmount.TabIndex = 24;
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(364, 235);
+            label11.Location = new Point(318, 176);
             label11.Name = "label11";
-            label11.Size = new Size(94, 20);
+            label11.Size = new Size(76, 15);
             label11.TabIndex = 23;
             label11.Text = "Max Amount";
             // 
-            // txtDocumentKTP
+            // textDocKtp
             // 
-            txtDocumentKTP.Location = new Point(364, 329);
-            txtDocumentKTP.Name = "txtDocumentKTP";
-            txtDocumentKTP.ReadOnly = true;
-            txtDocumentKTP.Size = new Size(248, 27);
-            txtDocumentKTP.TabIndex = 26;
+            textDocKtp.Location = new Point(318, 247);
+            textDocKtp.Margin = new Padding(3, 2, 3, 2);
+            textDocKtp.Name = "textDocKtp";
+            textDocKtp.ReadOnly = true;
+            textDocKtp.Size = new Size(218, 23);
+            textDocKtp.TabIndex = 26;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(364, 306);
+            label12.Location = new Point(318, 230);
             label12.Name = "label12";
-            label12.Size = new Size(107, 20);
+            label12.Size = new Size(87, 15);
             label12.TabIndex = 25;
             label12.Text = "Document KTP";
             // 
-            // btnShowKTP
+            // buttonShowDocKtp
             // 
-            btnShowKTP.Location = new Point(518, 365);
-            btnShowKTP.Name = "btnShowKTP";
-            btnShowKTP.Size = new Size(94, 29);
-            btnShowKTP.TabIndex = 28;
-            btnShowKTP.Text = "Show";
-            btnShowKTP.UseVisualStyleBackColor = true;
+            buttonShowDocKtp.Location = new Point(453, 274);
+            buttonShowDocKtp.Margin = new Padding(3, 2, 3, 2);
+            buttonShowDocKtp.Name = "buttonShowDocKtp";
+            buttonShowDocKtp.Size = new Size(82, 22);
+            buttonShowDocKtp.TabIndex = 28;
+            buttonShowDocKtp.Text = "Show";
+            buttonShowDocKtp.UseVisualStyleBackColor = true;
             // 
-            // btnBrowseKTP
+            // buttonFileKTP
             // 
-            btnBrowseKTP.Location = new Point(364, 365);
-            btnBrowseKTP.Name = "btnBrowseKTP";
-            btnBrowseKTP.Size = new Size(94, 29);
-            btnBrowseKTP.TabIndex = 27;
-            btnBrowseKTP.Text = "Browse";
-            btnBrowseKTP.UseVisualStyleBackColor = true;
+            buttonFileKTP.Location = new Point(318, 274);
+            buttonFileKTP.Margin = new Padding(3, 2, 3, 2);
+            buttonFileKTP.Name = "buttonFileKTP";
+            buttonFileKTP.Size = new Size(82, 22);
+            buttonFileKTP.TabIndex = 27;
+            buttonFileKTP.Text = "Browse";
+            buttonFileKTP.UseVisualStyleBackColor = true;
             // 
-            // btnShowSlip
+            // buttonShowDocSlip
             // 
-            btnShowSlip.Location = new Point(518, 488);
-            btnShowSlip.Name = "btnShowSlip";
-            btnShowSlip.Size = new Size(94, 29);
-            btnShowSlip.TabIndex = 32;
-            btnShowSlip.Text = "Show";
-            btnShowSlip.UseVisualStyleBackColor = true;
+            buttonShowDocSlip.Location = new Point(453, 366);
+            buttonShowDocSlip.Margin = new Padding(3, 2, 3, 2);
+            buttonShowDocSlip.Name = "buttonShowDocSlip";
+            buttonShowDocSlip.Size = new Size(82, 22);
+            buttonShowDocSlip.TabIndex = 32;
+            buttonShowDocSlip.Text = "Show";
+            buttonShowDocSlip.UseVisualStyleBackColor = true;
             // 
-            // btnBrowseSlip
+            // buttonFileSlip
             // 
-            btnBrowseSlip.Location = new Point(364, 488);
-            btnBrowseSlip.Name = "btnBrowseSlip";
-            btnBrowseSlip.Size = new Size(94, 29);
-            btnBrowseSlip.TabIndex = 31;
-            btnBrowseSlip.Text = "Browse";
-            btnBrowseSlip.UseVisualStyleBackColor = true;
+            buttonFileSlip.Location = new Point(318, 366);
+            buttonFileSlip.Margin = new Padding(3, 2, 3, 2);
+            buttonFileSlip.Name = "buttonFileSlip";
+            buttonFileSlip.Size = new Size(82, 22);
+            buttonFileSlip.TabIndex = 31;
+            buttonFileSlip.Text = "Browse";
+            buttonFileSlip.UseVisualStyleBackColor = true;
             // 
-            // txtDocumentSlip
+            // textDocSlip
             // 
-            txtDocumentSlip.Location = new Point(364, 452);
-            txtDocumentSlip.Name = "txtDocumentSlip";
-            txtDocumentSlip.ReadOnly = true;
-            txtDocumentSlip.Size = new Size(248, 27);
-            txtDocumentSlip.TabIndex = 30;
+            textDocSlip.Location = new Point(318, 339);
+            textDocSlip.Margin = new Padding(3, 2, 3, 2);
+            textDocSlip.Name = "textDocSlip";
+            textDocSlip.ReadOnly = true;
+            textDocSlip.Size = new Size(218, 23);
+            textDocSlip.TabIndex = 30;
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(364, 429);
+            label13.Location = new Point(318, 322);
             label13.Name = "label13";
-            label13.Size = new Size(137, 20);
+            label13.Size = new Size(108, 15);
             label13.TabIndex = 29;
             label13.Text = "Document Slip Gaji";
             // 
-            // btnApplySaving
+            // buttonApply
             // 
-            btnApplySaving.Location = new Point(199, 540);
-            btnApplySaving.Name = "btnApplySaving";
-            btnApplySaving.Size = new Size(127, 29);
-            btnApplySaving.TabIndex = 33;
-            btnApplySaving.Text = "Apply Saving";
-            btnApplySaving.UseVisualStyleBackColor = true;
+            buttonApply.Location = new Point(174, 405);
+            buttonApply.Margin = new Padding(3, 2, 3, 2);
+            buttonApply.Name = "buttonApply";
+            buttonApply.Size = new Size(111, 22);
+            buttonApply.TabIndex = 33;
+            buttonApply.Text = "Apply Saving";
+            buttonApply.UseVisualStyleBackColor = true;
+            buttonApply.Click += buttonApply_Click;
             // 
-            // btnNewSaving
+            // buttonNewSaving
             // 
-            btnNewSaving.Location = new Point(364, 540);
-            btnNewSaving.Name = "btnNewSaving";
-            btnNewSaving.Size = new Size(127, 29);
-            btnNewSaving.TabIndex = 34;
-            btnNewSaving.Text = "New Saving";
-            btnNewSaving.UseVisualStyleBackColor = true;
+            buttonNewSaving.Location = new Point(318, 405);
+            buttonNewSaving.Margin = new Padding(3, 2, 3, 2);
+            buttonNewSaving.Name = "buttonNewSaving";
+            buttonNewSaving.Size = new Size(111, 22);
+            buttonNewSaving.TabIndex = 34;
+            buttonNewSaving.Text = "New Saving";
+            buttonNewSaving.UseVisualStyleBackColor = true;
+            buttonNewSaving.Click += buttonNewSaving_Click;
             // 
-            // dgvSaving
+            // dataGriedViewSaving
             // 
-            dgvSaving.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSaving.Location = new Point(645, 52);
-            dgvSaving.Name = "dgvSaving";
-            dgvSaving.RowHeadersWidth = 51;
-            dgvSaving.Size = new Size(545, 465);
-            dgvSaving.TabIndex = 35;
+            dataGriedViewSaving.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGriedViewSaving.Location = new Point(564, 39);
+            dataGriedViewSaving.Margin = new Padding(3, 2, 3, 2);
+            dataGriedViewSaving.Name = "dataGriedViewSaving";
+            dataGriedViewSaving.RowHeadersWidth = 51;
+            dataGriedViewSaving.Size = new Size(457, 349);
+            dataGriedViewSaving.TabIndex = 35;
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(645, 29);
+            label14.Location = new Point(564, 22);
             label14.Name = "label14";
-            label14.Size = new Size(53, 20);
+            label14.Size = new Size(42, 15);
             label14.TabIndex = 36;
             label14.Text = "Saving";
             // 
-            // btnReload
+            // buttonReload
             // 
-            btnReload.Location = new Point(868, 540);
-            btnReload.Name = "btnReload";
-            btnReload.Size = new Size(127, 29);
-            btnReload.TabIndex = 37;
-            btnReload.Text = "Reload";
-            btnReload.UseVisualStyleBackColor = true;
+            buttonReload.Location = new Point(760, 405);
+            buttonReload.Margin = new Padding(3, 2, 3, 2);
+            buttonReload.Name = "buttonReload";
+            buttonReload.Size = new Size(111, 22);
+            buttonReload.TabIndex = 37;
+            buttonReload.Text = "Reload";
+            buttonReload.UseVisualStyleBackColor = true;
+            buttonReload.Click += buttonReload_Click;
+            // 
+            // labelId
+            // 
+            labelId.AutoSize = true;
+            labelId.Location = new Point(159, 22);
+            labelId.Name = "labelId";
+            labelId.Size = new Size(16, 15);
+            labelId.TabIndex = 38;
+            labelId.Text = "...";
             // 
             // SavingPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(btnReload);
+            Controls.Add(labelId);
+            Controls.Add(buttonReload);
             Controls.Add(label14);
-            Controls.Add(dgvSaving);
-            Controls.Add(btnNewSaving);
-            Controls.Add(btnApplySaving);
-            Controls.Add(btnShowSlip);
-            Controls.Add(btnBrowseSlip);
-            Controls.Add(txtDocumentSlip);
+            Controls.Add(dataGriedViewSaving);
+            Controls.Add(buttonNewSaving);
+            Controls.Add(buttonApply);
+            Controls.Add(buttonShowDocSlip);
+            Controls.Add(buttonFileSlip);
+            Controls.Add(textDocSlip);
             Controls.Add(label13);
-            Controls.Add(btnShowKTP);
-            Controls.Add(btnBrowseKTP);
-            Controls.Add(txtDocumentKTP);
+            Controls.Add(buttonShowDocKtp);
+            Controls.Add(buttonFileKTP);
+            Controls.Add(textDocKtp);
             Controls.Add(label12);
-            Controls.Add(txtMaxAmount);
+            Controls.Add(textMaxAmount);
             Controls.Add(label11);
-            Controls.Add(txtTenor);
+            Controls.Add(textTenor);
             Controls.Add(label10);
-            Controls.Add(txtInterest);
+            Controls.Add(textInterest);
             Controls.Add(label9);
-            Controls.Add(txtAmount);
+            Controls.Add(textAmount);
             Controls.Add(label8);
-            Controls.Add(btnShowKK);
-            Controls.Add(btnBrowseKK);
-            Controls.Add(txtDocumentKK);
+            Controls.Add(buttonShowDocKk);
+            Controls.Add(buttonFileKK);
+            Controls.Add(textDocKK);
             Controls.Add(label7);
-            Controls.Add(txtDueDate);
+            Controls.Add(textDueDate);
             Controls.Add(label6);
-            Controls.Add(txtInterestFine);
+            Controls.Add(textInterestFine);
             Controls.Add(label5);
-            Controls.Add(txtMinAmount);
+            Controls.Add(textMinAmount);
             Controls.Add(label4);
-            Controls.Add(txtAdminFee);
+            Controls.Add(textAdminFee);
             Controls.Add(label3);
-            Controls.Add(cmbSavingType);
+            Controls.Add(comboSavingMaster);
             Controls.Add(label2);
-            Controls.Add(txtSavingID);
+            Controls.Add(textSavingId);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "SavingPage";
-            Size = new Size(1193, 581);
-            ((System.ComponentModel.ISupportInitialize)dgvSaving).EndInit();
+            Size = new Size(1044, 436);
+            Load += SavingPage_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGriedViewSaving).EndInit();
+            ((System.ComponentModel.ISupportInitialize)loanMasterBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)loanBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -438,41 +484,44 @@
         #endregion
 
         private Label label1;
-        private TextBox txtSavingID;
+        private TextBox textSavingId;
         private Label label2;
-        private ComboBox cmbSavingType;
-        private TextBox txtAdminFee;
+        private ComboBox comboSavingMaster;
+        private TextBox textAdminFee;
         private Label label3;
-        private TextBox txtMinAmount;
+        private TextBox textMinAmount;
         private Label label4;
-        private TextBox txtInterestFine;
+        private TextBox textInterestFine;
         private Label label5;
-        private TextBox txtDueDate;
+        private TextBox textDueDate;
         private Label label6;
-        private TextBox txtDocumentKK;
+        private TextBox textDocKK;
         private Label label7;
-        private Button btnBrowseKK;
-        private Button btnShowKK;
-        private TextBox txtAmount;
+        private Button buttonFileKK;
+        private Button buttonShowDocKk;
+        private TextBox textAmount;
         private Label label8;
-        private TextBox txtInterest;
+        private TextBox textInterest;
         private Label label9;
-        private TextBox txtTenor;
+        private TextBox textTenor;
         private Label label10;
-        private TextBox txtMaxAmount;
+        private TextBox textMaxAmount;
         private Label label11;
-        private TextBox txtDocumentKTP;
+        private TextBox textDocKtp;
         private Label label12;
-        private Button btnShowKTP;
-        private Button btnBrowseKTP;
-        private Button btnShowSlip;
-        private Button btnBrowseSlip;
-        private TextBox txtDocumentSlip;
+        private Button buttonShowDocKtp;
+        private Button buttonFileKTP;
+        private Button buttonShowDocSlip;
+        private Button buttonFileSlip;
+        private TextBox textDocSlip;
         private Label label13;
-        private Button btnApplySaving;
-        private Button btnNewSaving;
-        private DataGridView dgvSaving;
+        private Button buttonApply;
+        private Button buttonNewSaving;
+        private DataGridView dataGriedViewSaving;
         private Label label14;
-        private Button btnReload;
+        private Button buttonReload;
+        private Label labelId;
+        private BindingSource loanMasterBindingSource;
+        private BindingSource loanBindingSource;
     }
 }
