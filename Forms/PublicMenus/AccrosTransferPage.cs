@@ -26,7 +26,7 @@ namespace Nescafe.Forms.PublicMenus
 
         private async void AccrosTransferPage_Load(object sender, EventArgs e)
         {
-            timerInbox.Enabled = false;
+            timer1.Enabled = false;
 
             if (loggedMember.ReferenceId == null || loggedMember.ReferenceId == "" || loggedMember.ReferenceId == "--")
             {
@@ -110,7 +110,7 @@ namespace Nescafe.Forms.PublicMenus
             TransferPayload payload = new TransferPayload
             {
                 amount = transferAmount,
-                benefCode = txtBenef.Text,
+                benefCode = txtBeneficiary.Text,
                 coopCode = loggedMember.ReferenceId,
                 memberCode = loggedMember.MemberId,
                 fee = Double.Parse(config?.transferAcrossFee.ToString() ?? "0"),
@@ -150,9 +150,9 @@ namespace Nescafe.Forms.PublicMenus
         }
 
 
-        private async void timerInbox_Tick(object sender, EventArgs e)
+        private async void timer1_Tick(object sender, EventArgs e)
         {
-            timerInbox.Stop();
+            timer1.Stop();
 
             try
             {
@@ -197,7 +197,7 @@ namespace Nescafe.Forms.PublicMenus
             }
             finally
             {
-                timerInbox.Start(); // restart setelah selesai
+                timer1.Start(); // restart setelah selesai
             }
         }
     }
