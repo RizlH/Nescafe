@@ -43,23 +43,23 @@ namespace Nescafe.Forms
             //inhouseToolStripMenuItem.Enabled = false;
             //acrossCooperationToolStripMenuItem.Enabled = false;
             //definitionsToolStripMenuItem.Enabled = false;
-           // manualToolStripMenuItem.Enabled = false;
+            // manualToolStripMenuItem.Enabled = false;
             fileToolStripMenuItem.Enabled = false;
             dashboardToolStripMenuItem.Enabled = false;
             profileToolStripMenuItem.Enabled = false;
 
             loanToolStripMenuItem.ToolTipText = "Disabled";
             savingToolStripMenuItem.ToolTipText = "Disabled";
-          //  inhouseToolStripMenuItem.ToolTipText = "Disabled";
-         //   acrossCooperationToolStripMenuItem.ToolTipText = "Disabled";
+            //  inhouseToolStripMenuItem.ToolTipText = "Disabled";
+            //   acrossCooperationToolStripMenuItem.ToolTipText = "Disabled";
         }
 
         public void grantAllMenu()
         {
             loanToolStripMenuItem.Enabled = true;
             savingToolStripMenuItem.Enabled = true;
-          //  inhouseToolStripMenuItem.Enabled = true;
-          //  acrossCooperationToolStripMenuItem.Enabled = true;
+            //  inhouseToolStripMenuItem.Enabled = true;
+            //  acrossCooperationToolStripMenuItem.Enabled = true;
         }
 
         public void grantAccess()
@@ -162,6 +162,12 @@ namespace Nescafe.Forms
         private void terminologiToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void exchangeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Text = title + " << Exchange Transfer Page >> ";
+            route(new ExchangePage(loggedMember));
         }
     }
 }
