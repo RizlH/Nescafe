@@ -167,7 +167,7 @@ namespace Nescafe.Forms
         private void exchangeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Text = title + " << Exchange Transfer Page >> ";
-            route(new ExchangePage(loggedMember));
+            route(new ExhangePage(loggedMember));
         }
     }
 }
