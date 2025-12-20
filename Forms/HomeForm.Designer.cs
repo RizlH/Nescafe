@@ -39,6 +39,7 @@
             tranferToolStripMenuItem = new ToolStripMenuItem();
             exchangeToolStripMenuItem = new ToolStripMenuItem();
             historyToolStripMenuItem = new ToolStripMenuItem();
+            panelDisplay = new Panel();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -116,15 +117,23 @@
             historyToolStripMenuItem.Size = new Size(57, 22);
             historyToolStripMenuItem.Text = "History";
             // 
+            // panelDisplay
+            // 
+            panelDisplay.Location = new Point(0, 45);
+            panelDisplay.Name = "panelDisplay";
+            panelDisplay.Size = new Size(818, 284);
+            panelDisplay.TabIndex = 1;
+            // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.LANY;
             ClientSize = new Size(818, 328);
+            Controls.Add(panelDisplay);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "HomeForm";
             Text = "HomeForm";
             Load += HomeForm_Load;
@@ -147,5 +156,6 @@
         private ToolStripMenuItem tranferToolStripMenuItem;
         private ToolStripMenuItem exchangeToolStripMenuItem;
         private ToolStripMenuItem historyToolStripMenuItem;
+        private Panel panelDisplay;
     }
 }

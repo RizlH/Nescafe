@@ -26,7 +26,7 @@ namespace Nescafe.Forms.PublicMenus
 
         private async void AccrosTransferPage_Load(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
+            timerInbox.Enabled = false;
 
             if (loggedMember.ReferenceId == null || loggedMember.ReferenceId == "" || loggedMember.ReferenceId == "--")
             {
@@ -83,7 +83,7 @@ namespace Nescafe.Forms.PublicMenus
                         BalanceService balanceService = new BalanceService(db);
                         balanceService.setBalance(loggedMember.MemberId);
 
-                        timer1.Enabled = true;
+                        timerInbox.Enabled = true;
                     }
                     else
                     {
@@ -152,7 +152,7 @@ namespace Nescafe.Forms.PublicMenus
 
         private async void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Stop();
+            timerInbox.Stop();
 
             try
             {
@@ -197,7 +197,7 @@ namespace Nescafe.Forms.PublicMenus
             }
             finally
             {
-                timer1.Start(); // restart setelah selesai
+                timerInbox.Start(); // restart setelah selesai
             }
         }
     }

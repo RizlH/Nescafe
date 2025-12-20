@@ -2,7 +2,6 @@
 using Nescafe.Data;
 using Nescafe.Models;
 using Microsoft.EntityFrameworkCore;
-using Nescafe.Models;
 
 namespace Nescafe.Services
 {
@@ -96,7 +95,7 @@ namespace Nescafe.Services
 
         public object SetDropDownSaving()
         {
-            var data = _db.LoanMasters.OrderBy(x => x.Name)
+            var data = _db.SavingMasters.OrderBy(x => x.Name)
                 .Select(x => new
                 {
                     x.Id,

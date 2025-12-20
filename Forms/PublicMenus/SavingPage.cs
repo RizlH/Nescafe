@@ -50,7 +50,9 @@ namespace Nescafe.Forms.PublicMenus
         private void SetSavingDropDown(AppDbContext db)
         {
             ProductService productService = new ProductService(db);
-            loanMasterBindingSource.DataSource = productService.SetDropDownSaving();
+            //loanMasterBindingSource.DataSource = productService.SetDropDownSaving();
+            Object obj = productService.SetDropDownSaving();
+            comboSavingMaster.DataSource = obj;
             comboSavingMaster.DisplayMember = "DisplayName";
             comboSavingMaster.ValueMember = "Id";
         }
@@ -101,12 +103,19 @@ namespace Nescafe.Forms.PublicMenus
         private async void LoadSavingGrid(AppDbContext db)
         {
             SavingService savingService = new SavingService(db);
-            loanBindingSource.DataSource = await savingService.LoadSavingGrid(loggedMember);
+            /*loanBindingSource.DataSource = await savingService.LoadSavingGrid(loggedMember);
             dataGriedViewSaving.Columns[0].DataPropertyName = "Id";
             dataGriedViewSaving.Columns[1].DataPropertyName = "SavingId";
             dataGriedViewSaving.Columns[2].DataPropertyName = "Amount";
-            dataGriedViewSaving.Columns[3].DataPropertyName = "Tenor";
+            dataGriedViewSaving.Columns[3].DataPropertyName = "Tenor";*/
 
+
+            List<Saving> listSaving = await savingService.LoadSavingGrid(loggedMember.Id);
+            foreach (Saving s in listSaving)
+            {
+                dataGriedViewSaving.Rows.Add(s.Id, s.SavingId, s.Amount, s.Tenor);
+            }
+            
             dataGriedViewSaving.Columns[0].Visible = false;
             dataGriedViewSaving.Columns[1].HeaderText = "Saving ID";
             dataGriedViewSaving.Columns[2].HeaderText = "Amount";

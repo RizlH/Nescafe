@@ -14,7 +14,7 @@ namespace Nescafe.Services
         private readonly AppDbContext _db;
         public BalanceService(AppDbContext db) => _db = db;
 
-        public void setBalance(String memberCode)
+        public void setBalance(String? memberCode)
         {
             Balance? balance = _db.Balances.FirstOrDefault(b => b.MemberCode == memberCode);
             if (balance == null)
