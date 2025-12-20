@@ -391,10 +391,13 @@
             // 
             // dataGriedViewSaving
             // 
+            dataGriedViewSaving.AllowUserToAddRows = false;
+            dataGriedViewSaving.AllowUserToDeleteRows = false;
             dataGriedViewSaving.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGriedViewSaving.Location = new Point(564, 39);
             dataGriedViewSaving.Margin = new Padding(3, 2, 3, 2);
             dataGriedViewSaving.Name = "dataGriedViewSaving";
+            dataGriedViewSaving.ReadOnly = true;
             dataGriedViewSaving.RowHeadersWidth = 51;
             dataGriedViewSaving.Size = new Size(457, 349);
             dataGriedViewSaving.TabIndex = 35;

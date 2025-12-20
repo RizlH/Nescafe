@@ -9,9 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Utilities\**" />
+    <EmbeddedResource Remove="Utilities\**" />
+    <None Remove="Utilities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Utilities\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
     <Folder Include="Util\" />
   </ItemGroup>
 
