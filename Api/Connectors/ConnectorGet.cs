@@ -11,7 +11,7 @@ namespace Nescafe.Api.Connectors
     public class ConnectorGet
     {
         private readonly HttpClient _httpClient = new HttpClient();
-        private String _baseUrl = "http://localhost:20254/";
+        private String _baseUrl = "http://103.82.242.90:20254";
 
         public async Task<CoopApiResponse?> GetCoopAsync()
         {
@@ -43,22 +43,7 @@ namespace Nescafe.Api.Connectors
             return JsonSerializer.Deserialize<MemberApiResponse>(json, options);
         }
 
-        public async Task<MemberApiResponse?> GetMembersByCoopAsync(string coopCode)
-        {
-            var response = await _httpClient.GetAsync(_baseUrl + "/member/list-by-coop/" + coopCode);
-            response.EnsureSuccessStatusCode();
-
-            var json = await response.Content.ReadAsStringAsync();
-
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            };
-
-            return JsonSerializer.Deserialize<MemberApiResponse>(json, options);
-        }
-
-        public async Task<MemberApiResponse?> GetMemberAsync(string memberCode)
+        public async Task<MemberApiResponse?> GetMemberAsync(String memberCode)
         {
             var response = await _httpClient.GetAsync(_baseUrl + "/member/code/" + memberCode);
             response.EnsureSuccessStatusCode();
@@ -73,7 +58,22 @@ namespace Nescafe.Api.Connectors
             return JsonSerializer.Deserialize<MemberApiResponse>(json, options);
         }
 
-        public async Task<BalanceApiResponse?> GetBalancesByCoopAsync(string coopCode)
+        public async Task<MemberApiResponse?> GetMembersByCoopAsync(String coopCode)
+        {
+            var response = await _httpClient.GetAsync(_baseUrl + "/member/list-by-coop/" + coopCode);
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            return JsonSerializer.Deserialize<MemberApiResponse>(json, options);
+        }
+
+        public async Task<BalanceApiResponse?> GetBalancesByCoopAsync(String coopCode)
         {
             var response = await _httpClient.GetAsync(_baseUrl + "/balance/coop/" + coopCode);
             response.EnsureSuccessStatusCode();
@@ -118,7 +118,7 @@ namespace Nescafe.Api.Connectors
             return JsonSerializer.Deserialize<TransferApiResponse>(json, options);
         }
 
-        public async Task<TransferApiResponse?> GetOutgoingByMemberAsync(string memberCode)
+        public async Task<TransferApiResponse?> GetOutgoingByMemberAsync(String memberCode)
         {
             var response = await _httpClient.GetAsync(_baseUrl + "/transfer/history/" + memberCode);
             response.EnsureSuccessStatusCode();
@@ -133,7 +133,7 @@ namespace Nescafe.Api.Connectors
             return JsonSerializer.Deserialize<TransferApiResponse>(json, options);
         }
 
-        public async Task<TransferApiResponse?> GetIncomingByMemberAsync(string benefCode)
+        public async Task<TransferApiResponse?> GetIncomingByMemberAsync(String benefCode)
         {
             var response = await _httpClient.GetAsync(_baseUrl + "/transfer/incoming/" + benefCode);
             response.EnsureSuccessStatusCode();
@@ -148,7 +148,7 @@ namespace Nescafe.Api.Connectors
             return JsonSerializer.Deserialize<TransferApiResponse>(json, options);
         }
 
-        public async Task<TransferApiResponse?> GetTransferByCodeAsync(string transferCode)
+        public async Task<TransferApiResponse?> GetTransferByCodeAsync(String transferCode)
         {
             var response = await _httpClient.GetAsync(_baseUrl + "/transfer/code/" + transferCode);
             response.EnsureSuccessStatusCode();
@@ -163,7 +163,7 @@ namespace Nescafe.Api.Connectors
             return JsonSerializer.Deserialize<TransferApiResponse>(json, options);
         }
 
-        public async Task<TransferApiResponse?> GetTransfersByCoopAsync(string coopCode)
+        public async Task<TransferApiResponse?> GetTransfersByCoopAsync(String coopCode)
         {
             var response = await _httpClient.GetAsync(_baseUrl + "/balance/coop/" + coopCode);
             response.EnsureSuccessStatusCode();
