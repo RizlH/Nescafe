@@ -50,7 +50,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(4, 1, 0, 1);
-            menuStrip1.Size = new Size(818, 24);
+            menuStrip1.Size = new Size(859, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -121,7 +121,7 @@
             // 
             panelDisplay.Location = new Point(0, 45);
             panelDisplay.Name = "panelDisplay";
-            panelDisplay.Size = new Size(818, 284);
+            panelDisplay.Size = new Size(859, 358);
             panelDisplay.TabIndex = 1;
             // 
             // HomeForm
@@ -129,7 +129,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.LANY;
-            ClientSize = new Size(818, 328);
+            ClientSize = new Size(859, 399);
             Controls.Add(panelDisplay);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;

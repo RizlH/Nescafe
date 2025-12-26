@@ -1,4 +1,5 @@
 ﻿using Nescafe.Forms.AdminMenus;
+using Nescafe.Forms.PublicMenus;
 using Nescafe.Models;
 using System;
 using System.Collections.Generic;
@@ -57,12 +58,16 @@ namespace Nescafe.Forms
         }
         private void acrossCooperationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // route(new AccrossPage());
+            // route(new AccrossPage());
         }
         private void approvalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          //  route(new ApprovalPage(loggedMember));
+            //  route(new ApprovalPage(loggedMember));
         }
 
+        private void accrossToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            route(new AcrossPage());
+        }
     }
 }
