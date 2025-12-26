@@ -94,8 +94,8 @@ namespace Nescafe.Forms.PublicMenus
                 {
                     message = ex.Message;
                 }
-                return message;
             }
+                return message;
         }
 
         private async void buttonSubmit_Click(object sender, EventArgs e)

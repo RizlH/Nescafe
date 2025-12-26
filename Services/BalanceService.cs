@@ -34,7 +34,7 @@ namespace Nescafe.Services
 
         public async Task<Balance?> getBalance(String memberCode) 
         {
-            return await _db.Balances.FirstOrDefaultAsync(b => b.MemberCode == memberCode);
+            return await _db.Balances.FirstOrDefaultAsync(b => b.MemberCode == memberCode!);
         }
 
         public async void Update(Balance balance)

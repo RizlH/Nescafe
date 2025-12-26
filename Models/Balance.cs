@@ -10,7 +10,7 @@ namespace Nescafe.Models
     public class Balance
     {
         public int Id { get; set; }
-        public Member MemberCode { get; set; }
+        public String MemberCode { get; set; }
         public decimal Amount { get; set; }
         public DateTime UpdateOn { get; set; }
         public string TransactionName { get; set; }
