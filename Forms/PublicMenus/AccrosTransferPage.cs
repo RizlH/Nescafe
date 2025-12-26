@@ -127,16 +127,16 @@ namespace Nescafe.Forms.PublicMenus
 
                 if (balance != null)
                 {
-                    balance.amount -= Decimal.Parse(transferAmount.ToString());
-                    balance.updateOn = DateTime.Now;
-                    balance.transactionName = "Across Transfer";
-                    balance.flow = "OUT";
+                    balance.Amount -= Decimal.Parse(transferAmount.ToString());
+                    balance.UpdateOn = DateTime.Now;
+                    balance.TransactionName = "Across Transfer";
+                    balance.Flow = "OUT";
                     balanceService.Update(balance);
                 }
 
                 BalancePayload balancePayload = new BalancePayload
                 {
-                    amount = Double.Parse(balance.amount.ToString()),
+                    amount = Double.Parse(balance.Amount.ToString()),
                     memberCode = loggedMember.MemberId
                 };
 
