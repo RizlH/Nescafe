@@ -8,33 +8,33 @@ namespace Nescafe.Api.Models
 {
     public class TransferPayload
     {
-        public string coopCode { get; set; } = "";
-        public string memberCode { get; set; } = "";
-        public string benefCode { get; set; } = "";
-        public double amount { get; set; }
-        public double fee { get; set; }
-        public string transferRef { get; set; } = "";
-        public string remarks { get; set; } = "";
+       public String coopCode { get; set; } = "";
+        public String memberCode { get; set; } = "";
+        public String benefCode { get; set; } = "";
+        public Double amount { get; set; } 
+        public Double fee { get; set; }
+        public String transferRef { get; set; } = "";
+        public String  remarks { get; set; } = "";
     }
 
-    public class BalancePayload
+    public class  BalancePayload 
     {
-        public string memberCode { get; set; } = "";
-        public double amount { get; set; }
+        public String memberCode { get; set; } = "";
+        public Double amount { get; set; }
     }
 
-    public class MemberPayload
+    public class  MemberPayload
     {
-        public string name { get; set; } = "";
-        public string address { get; set; } = "";
-        public string code { get; set; } = "";
-        public string coopCode { get; set; } = "";
+        public String name { get; set; } = "";
+        public String address { get; set; } = "";
+        public String code { get; set; } = "";
+        public String coopCode { get; set; } = "";
     }
 
     public class CoopPayload
     {
-        public string name { get; set; } = "";
-        public string address { get; set; } = "";
-        public string code { get; set; } = "";
+        public String name { get; set; } = "";
+        public String address { get; set; } = "";
+        public String code { get; set; } = "";
     }
 }
