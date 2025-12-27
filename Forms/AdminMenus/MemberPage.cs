@@ -1,8 +1,6 @@
-﻿using System.Windows.Forms;
-using Nescafe.Data;
+﻿using Nescafe.Data;
 using Nescafe.Models;
 using Nescafe.Services;
-using System.Windows.Forms.VisualStyles;
 
 namespace Nescafe.Forms.AdminMenus
 {
@@ -16,7 +14,7 @@ namespace Nescafe.Forms.AdminMenus
         private void MemberPage_Load(object sender, EventArgs e)
         {
             loadGridMember();
-            string? id = labelCardId.Text;
+            string? id = labelId.Text;
             if (id == null || id == "" || id == "...")
             {
                 buttonUpdate.Visible = false;
@@ -27,23 +25,24 @@ namespace Nescafe.Forms.AdminMenus
         {
             AppDbContext db = new AppDbContext();
             MemberService service = new MemberService(db);
-           // memberBindingSource.DataSource = service.SetGrid();
+            memberBindingSource.DataSource = service.SetGrid();
             dataGridViewMember.Columns[0].DataPropertyName = "Id";
             dataGridViewMember.Columns[0].Visible = false;
             dataGridViewMember.Columns[1].DataPropertyName = "MemberId";
             dataGridViewMember.Columns[2].DataPropertyName = "Fullname";
             dataGridViewMember.Columns[3].DataPropertyName = "ModDate";
+
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             AppDbContext db = new AppDbContext();
             MemberService service = new MemberService(db);
-            int memberId = int.Parse(labelMemberId.Text);
+            int memberId = int.Parse(labelId.Text);
             Member? member = service.FindById(memberId);
             if (member != null)
             {
-                if (comboBoxStatus.SelectedIndex == 0)
+                if (comboStatus.SelectedIndex == 0)
                     member.IsActive = true;
                 else
                     member.IsActive = false;
@@ -72,11 +71,12 @@ namespace Nescafe.Forms.AdminMenus
                     labelJoinDate.Text = member.JoinDate.ToString("f");
                     labelMemberId.Text = member.MemberId;
                     labelCardId.Text = member.IdCard;
-                    labelMemberId.Text = member.Id.ToString();
+                    labelId.Text = member.Id.ToString();
                     if (member.IsActive)
-                        comboBoxStatus.SelectedIndex = 0;
+                        comboStatus.SelectedIndex = 0;
                     else
-                        comboBoxStatus.SelectedIndex = 1;
+                        comboStatus.SelectedIndex = 1;
+
                     buttonUpdate.Visible = true;
                 }
                 else
