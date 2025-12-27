@@ -146,7 +146,7 @@ namespace Nescafe.Forms
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Text = title + " << Profile Page >>";
-            route(new ProfilePage(loggedMember));
+            //route(new ProfilePage(loggedMember));
         }
 
         private void loanToolStripMenuItem_Click(object sender, EventArgs e)
@@ -210,8 +210,8 @@ namespace Nescafe.Forms
 
         private void exchangeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Text = title + " << Exchange Transfer Page >>";
-            route(new ExchangePage(loggedMember));
+            //this.Text = title + " << Exchange Transfer Page >>";
+            //route(new ExchangePage(loggedMember));
         }
     }
 }

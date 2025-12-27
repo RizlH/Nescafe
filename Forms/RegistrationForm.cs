@@ -24,7 +24,7 @@ namespace Nescafe
         {
             using var db = new AppDbContext();
             var auth = new AuthService(db);
-            var member = auth.RegisterAsync(textFullName.Text, textUsername.Text, textPassword.Text, textCardId.Text, textPhone.Text, textPhoneAlt.Text, textEmail.Text, textReferenceId.Text, textQuest1.Text, textQuest2.Text, textAddress.Text);
+            var member = auth.RegisterAsync(txtAddress.Text, txtCardId.Text, txtEmail.Text, txtFullName.Text, txtPassword.Text, txtPhone.Text, txtPhoneAlt.Text, txtReferenceId.Text, txtUsername.Text, txtQuest1.Text, txtQuest2.Text);
 
             if (member != null) {
                 this.Hide();
@@ -45,3 +45,4 @@ namespace Nescafe
         }
     }
 }
+

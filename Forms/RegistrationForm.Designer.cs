@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
             label1 = new Label();
-            textFullName = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
+            txtFullName = new TextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            txtCardId = new TextBox();
+            txtPhone = new TextBox();
+            txtPhoneAlt = new TextBox();
+            txtEmail = new TextBox();
+            txtReferenceId = new TextBox();
+            txtQuest1 = new TextBox();
+            txtQuest2 = new TextBox();
+            txtAddress = new TextBox();
             textUsername = new Label();
             textPassword = new Label();
             textCardId = new Label();
@@ -66,83 +66,83 @@
             label1.TabIndex = 0;
             label1.Text = "Full Name";
             // 
-            // textFullName
+            // txtFullName
             // 
-            textFullName.Location = new Point(186, 12);
-            textFullName.Name = "textFullName";
-            textFullName.Size = new Size(150, 23);
-            textFullName.TabIndex = 1;
+            txtFullName.Location = new Point(186, 12);
+            txtFullName.Name = "txtFullName";
+            txtFullName.Size = new Size(150, 23);
+            txtFullName.TabIndex = 1;
             // 
-            // textBox2
+            // txtUsername
             // 
-            textBox2.Location = new Point(186, 41);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 23);
-            textBox2.TabIndex = 2;
+            txtUsername.Location = new Point(186, 41);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(150, 23);
+            txtUsername.TabIndex = 2;
             // 
-            // textBox3
+            // txtPassword
             // 
-            textBox3.Location = new Point(186, 70);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 23);
-            textBox3.TabIndex = 3;
+            txtPassword.Location = new Point(186, 70);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(150, 23);
+            txtPassword.TabIndex = 3;
             // 
-            // textBox4
+            // txtCardId
             // 
-            textBox4.Location = new Point(186, 99);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 23);
-            textBox4.TabIndex = 4;
+            txtCardId.Location = new Point(186, 99);
+            txtCardId.Name = "txtCardId";
+            txtCardId.Size = new Size(150, 23);
+            txtCardId.TabIndex = 4;
             // 
-            // textBox5
+            // txtPhone
             // 
-            textBox5.Location = new Point(186, 128);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(150, 23);
-            textBox5.TabIndex = 5;
+            txtPhone.Location = new Point(186, 128);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(150, 23);
+            txtPhone.TabIndex = 5;
             // 
-            // textBox6
+            // txtPhoneAlt
             // 
-            textBox6.Location = new Point(186, 157);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(150, 23);
-            textBox6.TabIndex = 6;
+            txtPhoneAlt.Location = new Point(186, 157);
+            txtPhoneAlt.Name = "txtPhoneAlt";
+            txtPhoneAlt.Size = new Size(150, 23);
+            txtPhoneAlt.TabIndex = 6;
             // 
-            // textBox7
+            // txtEmail
             // 
-            textBox7.Location = new Point(186, 186);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(150, 23);
-            textBox7.TabIndex = 7;
+            txtEmail.Location = new Point(186, 186);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(150, 23);
+            txtEmail.TabIndex = 7;
             // 
-            // textBox8
+            // txtReferenceId
             // 
-            textBox8.Location = new Point(186, 215);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(150, 23);
-            textBox8.TabIndex = 8;
+            txtReferenceId.Location = new Point(186, 215);
+            txtReferenceId.Name = "txtReferenceId";
+            txtReferenceId.Size = new Size(150, 23);
+            txtReferenceId.TabIndex = 8;
             // 
-            // textBox9
+            // txtQuest1
             // 
-            textBox9.Location = new Point(186, 244);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(150, 23);
-            textBox9.TabIndex = 9;
+            txtQuest1.Location = new Point(186, 244);
+            txtQuest1.Name = "txtQuest1";
+            txtQuest1.Size = new Size(150, 23);
+            txtQuest1.TabIndex = 9;
             // 
-            // textBox10
+            // txtQuest2
             // 
-            textBox10.Location = new Point(186, 273);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(150, 23);
-            textBox10.TabIndex = 10;
+            txtQuest2.Location = new Point(186, 273);
+            txtQuest2.Name = "txtQuest2";
+            txtQuest2.Size = new Size(150, 23);
+            txtQuest2.TabIndex = 10;
             // 
-            // textBox11
+            // txtAddress
             // 
-            textBox11.Location = new Point(186, 302);
-            textBox11.Multiline = true;
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(150, 100);
-            textBox11.TabIndex = 11;
+            txtAddress.Location = new Point(186, 302);
+            txtAddress.Multiline = true;
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(150, 100);
+            txtAddress.TabIndex = 11;
             // 
             // textUsername
             // 
@@ -294,17 +294,17 @@
             Controls.Add(textCardId);
             Controls.Add(textPassword);
             Controls.Add(textUsername);
-            Controls.Add(textBox11);
-            Controls.Add(textBox10);
-            Controls.Add(textBox9);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textFullName);
+            Controls.Add(txtAddress);
+            Controls.Add(txtQuest2);
+            Controls.Add(txtQuest1);
+            Controls.Add(txtReferenceId);
+            Controls.Add(txtEmail);
+            Controls.Add(txtPhoneAlt);
+            Controls.Add(txtPhone);
+            Controls.Add(txtCardId);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(txtFullName);
             Controls.Add(label1);
             Name = "RegistrationForm";
             Text = "Registration";
@@ -315,17 +315,17 @@
         #endregion
 
         private Label label1;
-        private TextBox textFullName;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
+        private TextBox txtFullName;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
+        private TextBox txtCardId;
+        private TextBox txtPhone;
+        private TextBox txtPhoneAlt;
+        private TextBox txtEmail;
+        private TextBox txtReferenceId;
+        private TextBox txtQuest1;
+        private TextBox txtQuest2;
+        private TextBox txtAddress;
         private Label textUsername;
         private Label textPassword;
         private Label textCardId;
