@@ -76,24 +76,28 @@
             memberToolStripMenuItem.Name = "memberToolStripMenuItem";
             memberToolStripMenuItem.Size = new Size(64, 22);
             memberToolStripMenuItem.Text = "Member";
+            memberToolStripMenuItem.Click += memberToolStripMenuItem_Click_1;
             // 
             // accessToolStripMenuItem
             // 
             accessToolStripMenuItem.Name = "accessToolStripMenuItem";
             accessToolStripMenuItem.Size = new Size(55, 22);
             accessToolStripMenuItem.Text = "Access";
+            accessToolStripMenuItem.Click += accessToolStripMenuItem_Click_1;
             // 
             // productToolStripMenuItem
             // 
             productToolStripMenuItem.Name = "productToolStripMenuItem";
             productToolStripMenuItem.Size = new Size(61, 22);
             productToolStripMenuItem.Text = "Product";
+            productToolStripMenuItem.Click += productToolStripMenuItem_Click_1;
             // 
             // approvalToolStripMenuItem
             // 
             approvalToolStripMenuItem.Name = "approvalToolStripMenuItem";
             approvalToolStripMenuItem.Size = new Size(67, 22);
             approvalToolStripMenuItem.Text = "Approval";
+            approvalToolStripMenuItem.Click += approvalToolStripMenuItem_Click_1;
             // 
             // accrossToolStripMenuItem
             // 

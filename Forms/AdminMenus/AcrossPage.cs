@@ -101,11 +101,11 @@ namespace Nescafe.Forms.AdminMenus
                     dgvBalance.Rows.Add(balance.Member.Code, balance.Member.Name, balance.Amount);
                 }
             }
-            else
-            {
-                message = balanceApiResponse != null ? balanceApiResponse.ResponseCode + " - "
-                    + balanceApiResponse.ResponseMessage : "Did not get data";
-            }
+            //else
+            //{
+            //    message = balanceApiResponse != null ? balanceApiResponse.ResponseCode + " - "
+            //        + balanceApiResponse.ResponseMessage : "Did not get data";
+            //}
 
             TransferApiResponse? transferApiResponse = await connectorGet.GetTransfersByCoopAsync(configuration.terminologi3);
             if (transferApiResponse != null && transferApiResponse.ResponseCode == "00")
@@ -116,11 +116,11 @@ namespace Nescafe.Forms.AdminMenus
                     dgvTransfer.Rows.Add(transfer.Code, transfer.CoopCode, transfer.CodeOrigin, transfer.CodeBenef, transfer.Amount, transfer.Remarks);
                 }
             }
-            else
-            {
-                message = transferApiResponse != null ? transferApiResponse.ResponseCode + " - "
-                    + transferApiResponse.ResponseMessage : "Did not get data";
-            }
+            //else
+            //{
+            //    message = transferApiResponse != null ? transferApiResponse.ResponseCode + " - "
+            //        + transferApiResponse.ResponseMessage : "Did not get data";
+            //}
 
             if (message != "")
             {

@@ -33,10 +33,6 @@ namespace Nescafe.Forms
         {
             route(new DashboardAdminPage(loggedMember));
         }
-        private void accessToolStripMenuItem_Click(Object sender, EventArgs e)
-        {
-            route(new AccessPage(loggedMember));
-        }
         private void configurationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             route(new ConfigurationPage());
@@ -47,14 +43,6 @@ namespace Nescafe.Forms
             this.Hide();
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
-        }
-        private void memberToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            route(new MemberPage());
-        }
-        private void productToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            route(new ProductPage());
         }
         private void acrossCooperationToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -68,6 +56,26 @@ namespace Nescafe.Forms
         private void accrossToolStripMenuItem_Click(object sender, EventArgs e)
         {
             route(new AcrossPage());
+        }
+
+        private void memberToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            route(new MemberPage());
+        }
+
+        private void accessToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            route(new AccessPage(loggedMember));
+        }
+
+        private void productToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            route(new ProductPage());
+        }
+
+        private void approvalToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+           // route(new ApprovalPage(loggedMember));
         }
     }
 }

@@ -13,7 +13,7 @@
         private System.Windows.Forms.Label labelPhoneAlt;
         private System.Windows.Forms.Label labelAddress;
         private System.Windows.Forms.Label labelStatus;
-        private System.Windows.Forms.ComboBox comboStatus;
+        private System.Windows.Forms.ComboBox comboBoxStatus;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.DataGridView dataGridViewMember;
 
@@ -38,7 +38,7 @@
             labelPhoneAlt = new Label();
             labelAddress = new Label();
             labelStatus = new Label();
-            comboStatus = new ComboBox();
+            comboBoxStatus = new ComboBox();
             buttonUpdate = new Button();
             dataGridViewMember = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMember).BeginInit();
@@ -126,13 +126,13 @@
             labelStatus.TabIndex = 8;
             labelStatus.Text = "Status";
             // 
-            // comboStatus
+            // comboBoxStatus
             // 
-            comboStatus.FormattingEnabled = true;
-            comboStatus.Location = new Point(10, 265);
-            comboStatus.Name = "comboStatus";
-            comboStatus.Size = new Size(150, 23);
-            comboStatus.TabIndex = 9;
+            comboBoxStatus.FormattingEnabled = true;
+            comboBoxStatus.Location = new Point(10, 265);
+            comboBoxStatus.Name = "comboBoxStatus";
+            comboBoxStatus.Size = new Size(150, 23);
+            comboBoxStatus.TabIndex = 9;
             // 
             // buttonUpdate
             // 
@@ -164,7 +164,7 @@
             Controls.Add(labelPhoneAlt);
             Controls.Add(labelAddress);
             Controls.Add(labelStatus);
-            Controls.Add(comboStatus);
+            Controls.Add(comboBoxStatus);
             Controls.Add(buttonUpdate);
             Controls.Add(dataGridViewMember);
             Name = "MemberPage";
