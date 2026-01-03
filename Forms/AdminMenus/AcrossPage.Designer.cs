@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             dgvCoop = new DataGridView();
-            dgvBalance = new DataGridView();
-            npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
-            dgvTransfer = new DataGridView();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            buttonRefresh = new Button();
             Code = new DataGridViewTextBoxColumn();
             Name = new DataGridViewTextBoxColumn();
             Address = new DataGridViewTextBoxColumn();
-            MemberCode = new DataGridViewTextBoxColumn();
-            MemberName = new DataGridViewTextBoxColumn();
-            Balance = new DataGridViewTextBoxColumn();
+            dgvBalance = new DataGridView();
+            npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
+            dgvTransfer = new DataGridView();
             TransferCode = new DataGridViewTextBoxColumn();
             CoopCode = new DataGridViewTextBoxColumn();
             CodeOrigin = new DataGridViewTextBoxColumn();
             CodeBenef = new DataGridViewTextBoxColumn();
             Amount = new DataGridViewTextBoxColumn();
             Remarks = new DataGridViewTextBoxColumn();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            buttonRefresh = new Button();
+            MemberCode = new DataGridViewTextBoxColumn();
+            MemberName = new DataGridViewTextBoxColumn();
+            Balance = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvCoop).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvBalance).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvTransfer).BeginInit();
@@ -61,18 +61,36 @@
             dgvCoop.Margin = new Padding(3, 2, 3, 2);
             dgvCoop.Name = "dgvCoop";
             dgvCoop.RowHeadersWidth = 51;
-            dgvCoop.Size = new Size(443, 171);
+            dgvCoop.Size = new Size(465, 171);
             dgvCoop.TabIndex = 0;
+            // 
+            // Code
+            // 
+            Code.HeaderText = "Code";
+            Code.Name = "Code";
+            Code.Width = 90;
+            // 
+            // Name
+            // 
+            Name.HeaderText = "Name";
+            Name.Name = "Name";
+            Name.Width = 150;
+            // 
+            // Address
+            // 
+            Address.HeaderText = "Address";
+            Address.Name = "Address";
+            Address.Width = 150;
             // 
             // dgvBalance
             // 
             dgvBalance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvBalance.Columns.AddRange(new DataGridViewColumn[] { MemberCode, MemberName, Balance });
-            dgvBalance.Location = new Point(518, 43);
+            dgvBalance.Location = new Point(525, 43);
             dgvBalance.Margin = new Padding(3, 2, 3, 2);
             dgvBalance.Name = "dgvBalance";
             dgvBalance.RowHeadersWidth = 51;
-            dgvBalance.Size = new Size(383, 171);
+            dgvBalance.Size = new Size(376, 171);
             dgvBalance.TabIndex = 1;
             // 
             // npgsqlDataAdapter1
@@ -92,6 +110,37 @@
             dgvTransfer.RowHeadersWidth = 51;
             dgvTransfer.Size = new Size(854, 138);
             dgvTransfer.TabIndex = 2;
+            // 
+            // TransferCode
+            // 
+            TransferCode.HeaderText = "Transfer Code";
+            TransferCode.Name = "TransferCode";
+            // 
+            // CoopCode
+            // 
+            CoopCode.HeaderText = "Coop Code";
+            CoopCode.Name = "CoopCode";
+            // 
+            // CodeOrigin
+            // 
+            CodeOrigin.HeaderText = "Code Origin";
+            CodeOrigin.Name = "CodeOrigin";
+            // 
+            // CodeBenef
+            // 
+            CodeBenef.HeaderText = "Code Benef";
+            CodeBenef.Name = "CodeBenef";
+            // 
+            // Amount
+            // 
+            Amount.HeaderText = "Amount";
+            Amount.Name = "Amount";
+            // 
+            // Remarks
+            // 
+            Remarks.HeaderText = "Remarks";
+            Remarks.Name = "Remarks";
+            Remarks.Width = 300;
             // 
             // label1
             // 
@@ -130,24 +179,6 @@
             buttonRefresh.Text = "Refresh";
             buttonRefresh.UseVisualStyleBackColor = true;
             // 
-            // Code
-            // 
-            Code.HeaderText = "Code";
-            Code.Name = "Code";
-            Code.Width = 90;
-            // 
-            // Name
-            // 
-            Name.HeaderText = "Name";
-            Name.Name = "Name";
-            Name.Width = 150;
-            // 
-            // Address
-            // 
-            Address.HeaderText = "Address";
-            Address.Name = "Address";
-            Address.Width = 150;
-            // 
             // MemberCode
             // 
             MemberCode.HeaderText = "Member Code";
@@ -157,43 +188,12 @@
             // 
             MemberName.HeaderText = "Member Name";
             MemberName.Name = "MemberName";
-            MemberName.Width = 130;
+            MemberName.Width = 120;
             // 
             // Balance
             // 
             Balance.HeaderText = "Balance";
             Balance.Name = "Balance";
-            // 
-            // TransferCode
-            // 
-            TransferCode.HeaderText = "Transfer Code";
-            TransferCode.Name = "TransferCode";
-            // 
-            // CoopCode
-            // 
-            CoopCode.HeaderText = "Coop Code";
-            CoopCode.Name = "CoopCode";
-            // 
-            // CodeOrigin
-            // 
-            CodeOrigin.HeaderText = "Code Origin";
-            CodeOrigin.Name = "CodeOrigin";
-            // 
-            // CodeBenef
-            // 
-            CodeBenef.HeaderText = "Code Benef";
-            CodeBenef.Name = "CodeBenef";
-            // 
-            // Amount
-            // 
-            Amount.HeaderText = "Amount";
-            Amount.Name = "Amount";
-            // 
-            // Remarks
-            // 
-            Remarks.HeaderText = "Remarks";
-            Remarks.Name = "Remarks";
-            Remarks.Width = 300;
             // 
             // AcrossPage
             // 
@@ -228,14 +228,14 @@
         private DataGridViewTextBoxColumn Code;
         private DataGridViewTextBoxColumn Name;
         private DataGridViewTextBoxColumn Address;
-        private DataGridViewTextBoxColumn MemberCode;
-        private DataGridViewTextBoxColumn MemberName;
-        private DataGridViewTextBoxColumn Balance;
         private DataGridViewTextBoxColumn TransferCode;
         private DataGridViewTextBoxColumn CoopCode;
         private DataGridViewTextBoxColumn CodeOrigin;
         private DataGridViewTextBoxColumn CodeBenef;
         private DataGridViewTextBoxColumn Amount;
         private DataGridViewTextBoxColumn Remarks;
+        private DataGridViewTextBoxColumn MemberCode;
+        private DataGridViewTextBoxColumn MemberName;
+        private DataGridViewTextBoxColumn Balance;
     }
 }

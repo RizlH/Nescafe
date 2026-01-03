@@ -82,5 +82,13 @@ namespace Nescafe.Forms
         {
             route(new ConfigurationPage());
         }
+
+        private void logoutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            loggedMember = null;
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+        }
     }
 }
