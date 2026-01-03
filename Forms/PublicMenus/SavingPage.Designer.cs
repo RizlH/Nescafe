@@ -69,6 +69,10 @@
             labelId = new Label();
             loanMasterBindingSource = new BindingSource(components);
             loanBindingSource = new BindingSource(components);
+            Id = new DataGridViewTextBoxColumn();
+            SavingId = new DataGridViewTextBoxColumn();
+            Amount = new DataGridViewTextBoxColumn();
+            Tenor = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGriedViewSaving).BeginInit();
             ((System.ComponentModel.ISupportInitialize)loanMasterBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)loanBindingSource).BeginInit();
@@ -394,6 +398,7 @@
             dataGriedViewSaving.AllowUserToAddRows = false;
             dataGriedViewSaving.AllowUserToDeleteRows = false;
             dataGriedViewSaving.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGriedViewSaving.Columns.AddRange(new DataGridViewColumn[] { Id, SavingId, Amount, Tenor });
             dataGriedViewSaving.Location = new Point(564, 39);
             dataGriedViewSaving.Margin = new Padding(3, 2, 3, 2);
             dataGriedViewSaving.Name = "dataGriedViewSaving";
@@ -430,6 +435,30 @@
             labelId.Size = new Size(16, 15);
             labelId.TabIndex = 38;
             labelId.Text = "...";
+            // 
+            // Id
+            // 
+            Id.HeaderText = "ID";
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            // 
+            // SavingId
+            // 
+            SavingId.HeaderText = "Saving Id";
+            SavingId.Name = "SavingId";
+            SavingId.ReadOnly = true;
+            // 
+            // Amount
+            // 
+            Amount.HeaderText = "Amount";
+            Amount.Name = "Amount";
+            Amount.ReadOnly = true;
+            // 
+            // Tenor
+            // 
+            Tenor.HeaderText = "Tenor";
+            Tenor.Name = "Tenor";
+            Tenor.ReadOnly = true;
             // 
             // SavingPage
             // 
@@ -526,5 +555,9 @@
         private Label labelId;
         private BindingSource loanMasterBindingSource;
         private BindingSource loanBindingSource;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn SavingId;
+        private DataGridViewTextBoxColumn Amount;
+        private DataGridViewTextBoxColumn Tenor;
     }
 }

@@ -111,7 +111,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(23, 208);
             label4.Name = "label4";
-            label4.Size = new Size(68, 15);
+            label4.Size = new Size(69, 15);
             label4.TabIndex = 6;
             label4.Text = "Transfer Ref";
             // 
@@ -159,7 +159,7 @@
             dgvIncoming.Location = new Point(266, 32);
             dgvIncoming.Name = "dgvIncoming";
             dgvIncoming.ReadOnly = true;
-            dgvIncoming.Size = new Size(240, 132);
+            dgvIncoming.Size = new Size(446, 132);
             dgvIncoming.TabIndex = 12;
             // 
             // label6
@@ -193,7 +193,7 @@
             dgvOutgoing.Location = new Point(266, 196);
             dgvOutgoing.Name = "dgvOutgoing";
             dgvOutgoing.ReadOnly = true;
-            dgvOutgoing.Size = new Size(240, 132);
+            dgvOutgoing.Size = new Size(446, 132);
             dgvOutgoing.TabIndex = 14;
             // 
             // labelMyBenef
@@ -228,7 +228,7 @@
             Controls.Add(textBalance);
             Controls.Add(label1);
             Name = "AcrossTransferPage";
-            Size = new Size(543, 383);
+            Size = new Size(739, 383);
             Load += AcrossTransferPage_Load;
             ((System.ComponentModel.ISupportInitialize)dgvIncoming).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvOutgoing).EndInit();

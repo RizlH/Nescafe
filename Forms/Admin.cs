@@ -75,7 +75,25 @@ namespace Nescafe.Forms
 
         private void approvalToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-           // route(new ApprovalPage(loggedMember));
+            // route(new ApprovalPage(loggedMember));
+        }
+
+        private void logoutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            loggedMember = null;
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+        }
+
+        private void fIleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void configurationToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            route(new ConfigurationPage());
         }
     }
 }

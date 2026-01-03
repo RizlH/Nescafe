@@ -58,18 +58,21 @@
             fIleToolStripMenuItem.Name = "fIleToolStripMenuItem";
             fIleToolStripMenuItem.Size = new Size(37, 22);
             fIleToolStripMenuItem.Text = "FIle";
+            fIleToolStripMenuItem.Click += fIleToolStripMenuItem_Click;
             // 
             // configurationToolStripMenuItem
             // 
             configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
-            configurationToolStripMenuItem.Size = new Size(148, 22);
+            configurationToolStripMenuItem.Size = new Size(180, 22);
             configurationToolStripMenuItem.Text = "Configuration";
+            configurationToolStripMenuItem.Click += configurationToolStripMenuItem_Click_1;
             // 
             // logoutToolStripMenuItem
             // 
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(148, 22);
+            logoutToolStripMenuItem.Size = new Size(180, 22);
             logoutToolStripMenuItem.Text = "Logout";
+            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click_1;
             // 
             // memberToolStripMenuItem
             // 
