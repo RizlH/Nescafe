@@ -222,7 +222,7 @@
             // 
             // textAmount
             // 
-            textAmount.Location = new Point(318, 39);
+            textAmount.Location = new Point(279, 39);
             textAmount.Margin = new Padding(3, 2, 3, 2);
             textAmount.Name = "textAmount";
             textAmount.Size = new Size(218, 23);
@@ -231,7 +231,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(318, 22);
+            label8.Location = new Point(279, 22);
             label8.Name = "label8";
             label8.Size = new Size(51, 15);
             label8.TabIndex = 17;
@@ -239,7 +239,7 @@
             // 
             // textInterest
             // 
-            textInterest.Location = new Point(318, 88);
+            textInterest.Location = new Point(279, 88);
             textInterest.Margin = new Padding(3, 2, 3, 2);
             textInterest.Name = "textInterest";
             textInterest.ReadOnly = true;
@@ -249,7 +249,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(318, 71);
+            label9.Location = new Point(279, 71);
             label9.Name = "label9";
             label9.Size = new Size(46, 15);
             label9.TabIndex = 19;
@@ -257,7 +257,7 @@
             // 
             // textTenor
             // 
-            textTenor.Location = new Point(318, 140);
+            textTenor.Location = new Point(279, 140);
             textTenor.Margin = new Padding(3, 2, 3, 2);
             textTenor.Name = "textTenor";
             textTenor.ReadOnly = true;
@@ -267,7 +267,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(318, 123);
+            label10.Location = new Point(279, 123);
             label10.Name = "label10";
             label10.Size = new Size(37, 15);
             label10.TabIndex = 21;
@@ -275,7 +275,7 @@
             // 
             // textMaxAmount
             // 
-            textMaxAmount.Location = new Point(318, 194);
+            textMaxAmount.Location = new Point(279, 194);
             textMaxAmount.Margin = new Padding(3, 2, 3, 2);
             textMaxAmount.Name = "textMaxAmount";
             textMaxAmount.ReadOnly = true;
@@ -285,7 +285,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(318, 176);
+            label11.Location = new Point(279, 176);
             label11.Name = "label11";
             label11.Size = new Size(76, 15);
             label11.TabIndex = 23;
@@ -293,7 +293,7 @@
             // 
             // textDocKtp
             // 
-            textDocKtp.Location = new Point(318, 247);
+            textDocKtp.Location = new Point(279, 247);
             textDocKtp.Margin = new Padding(3, 2, 3, 2);
             textDocKtp.Name = "textDocKtp";
             textDocKtp.ReadOnly = true;
@@ -303,7 +303,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(318, 230);
+            label12.Location = new Point(279, 230);
             label12.Name = "label12";
             label12.Size = new Size(87, 15);
             label12.TabIndex = 25;
@@ -311,7 +311,7 @@
             // 
             // buttonShowDocKtp
             // 
-            buttonShowDocKtp.Location = new Point(453, 274);
+            buttonShowDocKtp.Location = new Point(414, 274);
             buttonShowDocKtp.Margin = new Padding(3, 2, 3, 2);
             buttonShowDocKtp.Name = "buttonShowDocKtp";
             buttonShowDocKtp.Size = new Size(82, 22);
@@ -321,7 +321,7 @@
             // 
             // buttonFileKTP
             // 
-            buttonFileKTP.Location = new Point(318, 274);
+            buttonFileKTP.Location = new Point(279, 274);
             buttonFileKTP.Margin = new Padding(3, 2, 3, 2);
             buttonFileKTP.Name = "buttonFileKTP";
             buttonFileKTP.Size = new Size(82, 22);
@@ -331,7 +331,7 @@
             // 
             // buttonShowDocSlip
             // 
-            buttonShowDocSlip.Location = new Point(453, 366);
+            buttonShowDocSlip.Location = new Point(414, 366);
             buttonShowDocSlip.Margin = new Padding(3, 2, 3, 2);
             buttonShowDocSlip.Name = "buttonShowDocSlip";
             buttonShowDocSlip.Size = new Size(82, 22);
@@ -341,7 +341,7 @@
             // 
             // buttonFileSlip
             // 
-            buttonFileSlip.Location = new Point(318, 366);
+            buttonFileSlip.Location = new Point(279, 366);
             buttonFileSlip.Margin = new Padding(3, 2, 3, 2);
             buttonFileSlip.Name = "buttonFileSlip";
             buttonFileSlip.Size = new Size(82, 22);
@@ -351,7 +351,7 @@
             // 
             // textDocSlip
             // 
-            textDocSlip.Location = new Point(318, 339);
+            textDocSlip.Location = new Point(279, 339);
             textDocSlip.Margin = new Padding(3, 2, 3, 2);
             textDocSlip.Name = "textDocSlip";
             textDocSlip.ReadOnly = true;
@@ -361,7 +361,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(318, 322);
+            label13.Location = new Point(279, 322);
             label13.Name = "label13";
             label13.Size = new Size(108, 15);
             label13.TabIndex = 29;
@@ -369,10 +369,10 @@
             // 
             // buttonApply
             // 
-            buttonApply.Location = new Point(174, 405);
+            buttonApply.Location = new Point(124, 426);
             buttonApply.Margin = new Padding(3, 2, 3, 2);
             buttonApply.Name = "buttonApply";
-            buttonApply.Size = new Size(111, 22);
+            buttonApply.Size = new Size(118, 30);
             buttonApply.TabIndex = 33;
             buttonApply.Text = "Apply Saving";
             buttonApply.UseVisualStyleBackColor = true;
@@ -380,10 +380,10 @@
             // 
             // buttonNewSaving
             // 
-            buttonNewSaving.Location = new Point(318, 405);
+            buttonNewSaving.Location = new Point(279, 426);
             buttonNewSaving.Margin = new Padding(3, 2, 3, 2);
             buttonNewSaving.Name = "buttonNewSaving";
-            buttonNewSaving.Size = new Size(111, 22);
+            buttonNewSaving.Size = new Size(108, 30);
             buttonNewSaving.TabIndex = 34;
             buttonNewSaving.Text = "New Saving";
             buttonNewSaving.UseVisualStyleBackColor = true;
@@ -394,18 +394,18 @@
             dataGriedViewSaving.AllowUserToAddRows = false;
             dataGriedViewSaving.AllowUserToDeleteRows = false;
             dataGriedViewSaving.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGriedViewSaving.Location = new Point(564, 39);
+            dataGriedViewSaving.Location = new Point(532, 39);
             dataGriedViewSaving.Margin = new Padding(3, 2, 3, 2);
             dataGriedViewSaving.Name = "dataGriedViewSaving";
             dataGriedViewSaving.ReadOnly = true;
             dataGriedViewSaving.RowHeadersWidth = 51;
-            dataGriedViewSaving.Size = new Size(457, 349);
+            dataGriedViewSaving.Size = new Size(476, 349);
             dataGriedViewSaving.TabIndex = 35;
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(564, 22);
+            label14.Location = new Point(532, 22);
             label14.Name = "label14";
             label14.Size = new Size(42, 15);
             label14.TabIndex = 36;
@@ -413,7 +413,7 @@
             // 
             // buttonReload
             // 
-            buttonReload.Location = new Point(760, 405);
+            buttonReload.Location = new Point(727, 404);
             buttonReload.Margin = new Padding(3, 2, 3, 2);
             buttonReload.Name = "buttonReload";
             buttonReload.Size = new Size(111, 22);
@@ -475,7 +475,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "SavingPage";
-            Size = new Size(1044, 436);
+            Size = new Size(1050, 500);
             Load += SavingPage_Load;
             ((System.ComponentModel.ISupportInitialize)dataGriedViewSaving).EndInit();
             ((System.ComponentModel.ISupportInitialize)loanMasterBindingSource).EndInit();

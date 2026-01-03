@@ -27,5 +27,10 @@ namespace Nescafe.Forms.PublicMenus
         {
 
         }
+
+        private void textLoan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

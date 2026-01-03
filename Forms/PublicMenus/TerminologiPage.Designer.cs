@@ -39,60 +39,66 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(70, 62);
+            label1.Location = new Point(114, 63);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(24, 25);
+            label1.Size = new Size(16, 15);
             label1.TabIndex = 0;
             label1.Text = "...";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(70, 230);
+            label2.Location = new Point(114, 164);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(24, 25);
+            label2.Size = new Size(16, 15);
             label2.TabIndex = 1;
             label2.Text = "...";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(70, 414);
+            label3.Location = new Point(114, 274);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(24, 25);
+            label3.Size = new Size(16, 15);
             label3.TabIndex = 2;
             label3.Text = "...";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(70, 513);
+            label4.Location = new Point(136, 354);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(130, 25);
+            label4.Size = new Size(86, 15);
             label4.TabIndex = 3;
             label4.Text = "Exchange Rate:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(390, 513);
+            label5.Location = new Point(411, 354);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(111, 25);
+            label5.Size = new Size(73, 15);
             label5.TabIndex = 4;
             label5.Text = "Inhouse Fee:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(689, 513);
+            label6.Location = new Point(730, 354);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(101, 25);
+            label6.Size = new Size(66, 15);
             label6.TabIndex = 5;
             label6.Text = "Across Fee:";
             // 
             // TerminologiPage
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label6);
             Controls.Add(label5);
@@ -100,8 +106,9 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "TerminologiPage";
-            Size = new Size(991, 653);
+            Size = new Size(1050, 450);
             ResumeLayout(false);
             PerformLayout();
         }

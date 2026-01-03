@@ -17,10 +17,5 @@ namespace Nescafe.Forms.AdminMenus
         {
             InitializeComponent();
         }
-
-        private void DashboardAdminPage_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

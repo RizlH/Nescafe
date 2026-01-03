@@ -71,81 +71,90 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.ActiveBorder;
-            pictureBox1.Location = new Point(44, 41);
+            pictureBox1.Location = new Point(39, 34);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(233, 137);
+            pictureBox1.Size = new Size(250, 100);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.BackColor = SystemColors.GradientInactiveCaption;
-            pictureBox2.Location = new Point(44, 208);
+            pictureBox2.Location = new Point(39, 179);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(233, 137);
+            pictureBox2.Size = new Size(250, 100);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             pictureBox3.BackColor = Color.Turquoise;
-            pictureBox3.Location = new Point(44, 371);
+            pictureBox3.Location = new Point(39, 318);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(233, 137);
+            pictureBox3.Size = new Size(250, 100);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             pictureBox4.BackColor = Color.Salmon;
-            pictureBox4.Location = new Point(316, 41);
+            pictureBox4.Location = new Point(349, 34);
+            pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(233, 137);
+            pictureBox4.Size = new Size(250, 100);
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
             pictureBox5.BackColor = Color.Orange;
-            pictureBox5.Location = new Point(316, 208);
+            pictureBox5.Location = new Point(349, 179);
+            pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(233, 137);
+            pictureBox5.Size = new Size(250, 100);
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             pictureBox6.BackColor = Color.MediumPurple;
-            pictureBox6.Location = new Point(316, 371);
+            pictureBox6.Location = new Point(349, 318);
+            pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(233, 137);
+            pictureBox6.Size = new Size(250, 100);
             pictureBox6.TabIndex = 5;
             pictureBox6.TabStop = false;
             // 
             // pictureBox7
             // 
             pictureBox7.BackColor = Color.DeepSkyBlue;
-            pictureBox7.Location = new Point(588, 41);
+            pictureBox7.Location = new Point(658, 34);
+            pictureBox7.Margin = new Padding(2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(233, 137);
+            pictureBox7.Size = new Size(250, 100);
             pictureBox7.TabIndex = 6;
             pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
             pictureBox8.BackColor = Color.Lime;
-            pictureBox8.Location = new Point(588, 208);
+            pictureBox8.Location = new Point(658, 179);
+            pictureBox8.Margin = new Padding(2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(233, 137);
+            pictureBox8.Size = new Size(250, 100);
             pictureBox8.TabIndex = 7;
             pictureBox8.TabStop = false;
             // 
             // pictureBox9
             // 
             pictureBox9.BackColor = Color.DeepPink;
-            pictureBox9.Location = new Point(588, 371);
+            pictureBox9.Location = new Point(658, 318);
+            pictureBox9.Margin = new Padding(2);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(233, 137);
+            pictureBox9.Size = new Size(250, 100);
             pictureBox9.TabIndex = 8;
             pictureBox9.TabStop = false;
             // 
@@ -154,9 +163,10 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ActiveBorder;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(62, 61);
+            label1.Location = new Point(51, 46);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(110, 32);
+            label1.Size = new Size(74, 21);
             label1.TabIndex = 9;
             label1.Text = "Member";
             // 
@@ -165,9 +175,10 @@
             textMember.AutoSize = true;
             textMember.BackColor = SystemColors.ActiveBorder;
             textMember.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textMember.Location = new Point(216, 126);
+            textMember.Location = new Point(239, 92);
+            textMember.Margin = new Padding(2, 0, 2, 0);
             textMember.Name = "textMember";
-            textMember.Size = new Size(28, 32);
+            textMember.Size = new Size(19, 21);
             textMember.TabIndex = 10;
             textMember.Text = "0";
             // 
@@ -176,9 +187,10 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Salmon;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(336, 61);
+            label3.Location = new Point(363, 48);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(105, 32);
+            label3.Size = new Size(70, 21);
             label3.TabIndex = 11;
             label3.Text = "Product";
             // 
@@ -187,9 +199,10 @@
             textProduct.AutoSize = true;
             textProduct.BackColor = Color.Salmon;
             textProduct.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textProduct.Location = new Point(487, 126);
+            textProduct.Location = new Point(540, 92);
+            textProduct.Margin = new Padding(2, 0, 2, 0);
             textProduct.Name = "textProduct";
-            textProduct.Size = new Size(28, 32);
+            textProduct.Size = new Size(19, 21);
             textProduct.TabIndex = 12;
             textProduct.Text = "0";
             // 
@@ -198,9 +211,10 @@
             label5.AutoSize = true;
             label5.BackColor = Color.DeepSkyBlue;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(616, 61);
+            label5.Location = new Point(677, 46);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(153, 32);
+            label5.Size = new Size(101, 21);
             label5.TabIndex = 13;
             label5.Text = "Coop Group";
             // 
@@ -209,9 +223,10 @@
             textCoopGroup.AutoSize = true;
             textCoopGroup.BackColor = Color.DeepSkyBlue;
             textCoopGroup.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textCoopGroup.Location = new Point(758, 126);
+            textCoopGroup.Location = new Point(858, 92);
+            textCoopGroup.Margin = new Padding(2, 0, 2, 0);
             textCoopGroup.Name = "textCoopGroup";
-            textCoopGroup.Size = new Size(28, 32);
+            textCoopGroup.Size = new Size(19, 21);
             textCoopGroup.TabIndex = 14;
             textCoopGroup.Text = "0";
             // 
@@ -220,9 +235,10 @@
             label7.AutoSize = true;
             label7.BackColor = SystemColors.GradientInactiveCaption;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(62, 235);
+            label7.Location = new Point(51, 195);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(102, 32);
+            label7.Size = new Size(70, 21);
             label7.TabIndex = 15;
             label7.Text = "Balance";
             // 
@@ -231,9 +247,10 @@
             textBalance.AutoSize = true;
             textBalance.BackColor = SystemColors.GradientInactiveCaption;
             textBalance.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBalance.Location = new Point(216, 294);
+            textBalance.Location = new Point(239, 237);
+            textBalance.Margin = new Padding(2, 0, 2, 0);
             textBalance.Name = "textBalance";
-            textBalance.Size = new Size(28, 32);
+            textBalance.Size = new Size(19, 21);
             textBalance.TabIndex = 16;
             textBalance.Text = "0";
             // 
@@ -242,9 +259,10 @@
             label9.AutoSize = true;
             label9.BackColor = Color.Orange;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(336, 235);
+            label9.Location = new Point(363, 197);
+            label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
-            label9.Size = new Size(69, 32);
+            label9.Size = new Size(47, 21);
             label9.TabIndex = 17;
             label9.Text = "Loan";
             // 
@@ -253,9 +271,10 @@
             textLoan.AutoSize = true;
             textLoan.BackColor = Color.Orange;
             textLoan.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textLoan.Location = new Point(487, 294);
+            textLoan.Location = new Point(540, 237);
+            textLoan.Margin = new Padding(2, 0, 2, 0);
             textLoan.Name = "textLoan";
-            textLoan.Size = new Size(28, 32);
+            textLoan.Size = new Size(19, 21);
             textLoan.TabIndex = 18;
             textLoan.Text = "0";
             // 
@@ -264,9 +283,10 @@
             label11.AutoSize = true;
             label11.BackColor = Color.Lime;
             label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(616, 235);
+            label11.Location = new Point(677, 195);
+            label11.Margin = new Padding(2, 0, 2, 0);
             label11.Name = "label11";
-            label11.Size = new Size(90, 32);
+            label11.Size = new Size(62, 21);
             label11.TabIndex = 19;
             label11.Text = "Saving";
             // 
@@ -275,9 +295,10 @@
             textSaving.AutoSize = true;
             textSaving.BackColor = Color.Lime;
             textSaving.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textSaving.Location = new Point(758, 294);
+            textSaving.Location = new Point(858, 237);
+            textSaving.Margin = new Padding(2, 0, 2, 0);
             textSaving.Name = "textSaving";
-            textSaving.Size = new Size(28, 32);
+            textSaving.Size = new Size(19, 21);
             textSaving.TabIndex = 20;
             textSaving.Text = "0";
             // 
@@ -286,9 +307,10 @@
             label13.AutoSize = true;
             label13.BackColor = Color.Turquoise;
             label13.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(62, 388);
+            label13.Location = new Point(51, 327);
+            label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(105, 32);
+            label13.Size = new Size(71, 21);
             label13.TabIndex = 21;
             label13.Text = "Inhouse";
             // 
@@ -297,9 +319,10 @@
             label14.AutoSize = true;
             label14.BackColor = Color.Turquoise;
             label14.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(62, 419);
+            label14.Location = new Point(51, 345);
+            label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(157, 32);
+            label14.Size = new Size(105, 21);
             label14.TabIndex = 22;
             label14.Text = "Transactions";
             // 
@@ -308,9 +331,10 @@
             textInhouseTransactions.AutoSize = true;
             textInhouseTransactions.BackColor = Color.Turquoise;
             textInhouseTransactions.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textInhouseTransactions.Location = new Point(216, 459);
+            textInhouseTransactions.Location = new Point(239, 380);
+            textInhouseTransactions.Margin = new Padding(2, 0, 2, 0);
             textInhouseTransactions.Name = "textInhouseTransactions";
-            textInhouseTransactions.Size = new Size(28, 32);
+            textInhouseTransactions.Size = new Size(19, 21);
             textInhouseTransactions.TabIndex = 23;
             textInhouseTransactions.Text = "0";
             // 
@@ -319,9 +343,10 @@
             label16.AutoSize = true;
             label16.BackColor = Color.MediumPurple;
             label16.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Location = new Point(336, 388);
+            label16.Location = new Point(363, 330);
+            label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
-            label16.Size = new Size(102, 32);
+            label16.Size = new Size(67, 21);
             label16.TabIndex = 24;
             label16.Text = "Accross";
             // 
@@ -330,9 +355,10 @@
             label17.AutoSize = true;
             label17.BackColor = Color.MediumPurple;
             label17.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.Location = new Point(336, 419);
+            label17.Location = new Point(363, 348);
+            label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
-            label17.Size = new Size(157, 32);
+            label17.Size = new Size(105, 21);
             label17.TabIndex = 25;
             label17.Text = "Transactions";
             // 
@@ -341,9 +367,10 @@
             textAccTransactions.AutoSize = true;
             textAccTransactions.BackColor = Color.MediumPurple;
             textAccTransactions.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textAccTransactions.Location = new Point(487, 459);
+            textAccTransactions.Location = new Point(540, 380);
+            textAccTransactions.Margin = new Padding(2, 0, 2, 0);
             textAccTransactions.Name = "textAccTransactions";
-            textAccTransactions.Size = new Size(28, 32);
+            textAccTransactions.Size = new Size(19, 21);
             textAccTransactions.TabIndex = 26;
             textAccTransactions.Text = "0";
             // 
@@ -352,9 +379,10 @@
             label19.AutoSize = true;
             label19.BackColor = Color.DeepPink;
             label19.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.Location = new Point(616, 388);
+            label19.Location = new Point(677, 328);
+            label19.Margin = new Padding(2, 0, 2, 0);
             label19.Name = "label19";
-            label19.Size = new Size(122, 32);
+            label19.Size = new Size(84, 21);
             label19.TabIndex = 27;
             label19.Text = "Exchange";
             // 
@@ -363,15 +391,16 @@
             textExchange.AutoSize = true;
             textExchange.BackColor = Color.DeepPink;
             textExchange.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textExchange.Location = new Point(758, 459);
+            textExchange.Location = new Point(858, 380);
+            textExchange.Margin = new Padding(2, 0, 2, 0);
             textExchange.Name = "textExchange";
-            textExchange.Size = new Size(28, 32);
+            textExchange.Size = new Size(19, 21);
             textExchange.TabIndex = 28;
             textExchange.Text = "0";
             // 
             // DashboardAdminPage
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(textExchange);
             Controls.Add(label19);
@@ -402,9 +431,9 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Margin = new Padding(2);
             Name = "DashboardAdminPage";
-            Size = new Size(886, 545);
-            Load += DashboardAdminPage_Load;
+            Size = new Size(950, 450);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

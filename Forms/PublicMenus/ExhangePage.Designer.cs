@@ -47,7 +47,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(47, 26);
+            label1.Location = new Point(134, 26);
             label1.Name = "label1";
             label1.Size = new Size(180, 30);
             label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(20, 106);
+            label2.Location = new Point(47, 105);
             label2.Name = "label2";
             label2.Size = new Size(51, 15);
             label2.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             // tbAmount
             // 
-            tbAmount.Location = new Point(89, 104);
+            tbAmount.Location = new Point(190, 106);
             tbAmount.Margin = new Padding(3, 2, 3, 2);
             tbAmount.Name = "tbAmount";
             tbAmount.Size = new Size(170, 23);
@@ -73,7 +73,7 @@
             // 
             // tbRate
             // 
-            tbRate.Location = new Point(89, 140);
+            tbRate.Location = new Point(190, 142);
             tbRate.Margin = new Padding(3, 2, 3, 2);
             tbRate.Name = "tbRate";
             tbRate.ReadOnly = true;
@@ -83,7 +83,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(20, 142);
+            label3.Location = new Point(47, 141);
             label3.Name = "label3";
             label3.Size = new Size(30, 15);
             label3.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             // tbSubTotal
             // 
-            tbSubTotal.Location = new Point(89, 184);
+            tbSubTotal.Location = new Point(190, 186);
             tbSubTotal.Margin = new Padding(3, 2, 3, 2);
             tbSubTotal.Name = "tbSubTotal";
             tbSubTotal.ReadOnly = true;
@@ -101,7 +101,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(20, 187);
+            label4.Location = new Point(47, 186);
             label4.Name = "label4";
             label4.Size = new Size(56, 15);
             label4.TabIndex = 5;
@@ -109,7 +109,7 @@
             // 
             // tbFee
             // 
-            tbFee.Location = new Point(89, 223);
+            tbFee.Location = new Point(190, 225);
             tbFee.Margin = new Padding(3, 2, 3, 2);
             tbFee.Name = "tbFee";
             tbFee.ReadOnly = true;
@@ -119,7 +119,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(20, 225);
+            label5.Location = new Point(47, 224);
             label5.Name = "label5";
             label5.Size = new Size(25, 15);
             label5.TabIndex = 7;
@@ -127,7 +127,7 @@
             // 
             // tbTotal
             // 
-            tbTotal.Location = new Point(89, 263);
+            tbTotal.Location = new Point(190, 265);
             tbTotal.Margin = new Padding(3, 2, 3, 2);
             tbTotal.Name = "tbTotal";
             tbTotal.ReadOnly = true;
@@ -137,7 +137,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(20, 266);
+            label6.Location = new Point(47, 265);
             label6.Name = "label6";
             label6.Size = new Size(33, 15);
             label6.TabIndex = 9;
@@ -145,7 +145,7 @@
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(89, 288);
+            btnSubmit.Location = new Point(190, 314);
             btnSubmit.Margin = new Padding(3, 2, 3, 2);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(82, 22);
@@ -156,7 +156,7 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(177, 288);
+            btnClear.Location = new Point(278, 314);
             btnClear.Margin = new Padding(3, 2, 3, 2);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(82, 22);
@@ -184,7 +184,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "ExhangePage";
-            Size = new Size(300, 356);
+            Size = new Size(1050, 500);
             Load += ExhangePage_Load;
             ResumeLayout(false);
             PerformLayout();

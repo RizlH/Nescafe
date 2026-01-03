@@ -69,10 +69,10 @@
             dataGridViewAccess.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewAccess.Columns.AddRange(new DataGridViewColumn[] { Id, memberDataGridViewTextBoxColumn, accessListDataGridViewTextBoxColumn, updateOnDataGridViewTextBoxColumn });
             dataGridViewAccess.DataSource = accessBindingSource;
-            dataGridViewAccess.Location = new Point(265, 38);
+            dataGridViewAccess.Location = new Point(366, 57);
             dataGridViewAccess.Name = "dataGridViewAccess";
             dataGridViewAccess.ReadOnly = true;
-            dataGridViewAccess.Size = new Size(476, 344);
+            dataGridViewAccess.Size = new Size(509, 344);
             dataGridViewAccess.TabIndex = 0;
             dataGridViewAccess.CellContentClick += dataGridViewAccess_CellContentClick;
             // 
@@ -113,7 +113,7 @@
             comboMember.DataSource = memberBindingSource;
             comboMember.DisplayMember = "memberId";
             comboMember.FormattingEnabled = true;
-            comboMember.Location = new Point(3, 38);
+            comboMember.Location = new Point(74, 57);
             comboMember.Name = "comboMember";
             comboMember.Size = new Size(175, 23);
             comboMember.TabIndex = 1;
@@ -127,7 +127,7 @@
             // 
             listBoxAccess.FormattingEnabled = true;
             listBoxAccess.Items.AddRange(new object[] { "Grant All", "Loan", "Saving", "Transfer - Inhouse", "Transfer - Accross", "Exchange" });
-            listBoxAccess.Location = new Point(3, 67);
+            listBoxAccess.Location = new Point(74, 86);
             listBoxAccess.Name = "listBoxAccess";
             listBoxAccess.Size = new Size(256, 112);
             listBoxAccess.TabIndex = 2;
@@ -136,7 +136,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(6, 20);
+            label1.Location = new Point(77, 39);
             label1.Name = "label1";
             label1.Size = new Size(52, 15);
             label1.TabIndex = 3;
@@ -145,7 +145,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(268, 20);
+            label2.Location = new Point(369, 39);
             label2.Name = "label2";
             label2.Size = new Size(43, 15);
             label2.TabIndex = 4;
@@ -165,7 +165,7 @@
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
-            groupBox1.Location = new Point(5, 185);
+            groupBox1.Location = new Point(76, 204);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(254, 197);
             groupBox1.TabIndex = 5;
@@ -282,7 +282,7 @@
             // 
             // buttonSubmit
             // 
-            buttonSubmit.Location = new Point(184, 38);
+            buttonSubmit.Location = new Point(255, 57);
             buttonSubmit.Name = "buttonSubmit";
             buttonSubmit.Size = new Size(75, 23);
             buttonSubmit.TabIndex = 6;
@@ -302,7 +302,7 @@
             Controls.Add(comboMember);
             Controls.Add(dataGridViewAccess);
             Name = "AccessPage";
-            Size = new Size(744, 398);
+            Size = new Size(950, 450);
             Load += AccessPage_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewAccess).EndInit();
             ((System.ComponentModel.ISupportInitialize)accessBindingSource).EndInit();

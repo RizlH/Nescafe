@@ -50,7 +50,7 @@
             menuHome.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, profileToolStripMenuItem, loanToolStripMenuItem, savingToolStripMenuItem, transferToolStripMenuItem, exchangeToolStripMenuItem, historyToolStripMenuItem });
             menuHome.Location = new Point(0, 0);
             menuHome.Name = "menuHome";
-            menuHome.Size = new Size(800, 24);
+            menuHome.Size = new Size(1051, 24);
             menuHome.TabIndex = 0;
             menuHome.Text = "menuStrip1";
             // 
@@ -67,21 +67,21 @@
             // 
             dashboardToolStripMenuItem.DisplayStyle = ToolStripItemDisplayStyle.Text;
             dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            dashboardToolStripMenuItem.Size = new Size(137, 22);
+            dashboardToolStripMenuItem.Size = new Size(138, 22);
             dashboardToolStripMenuItem.Text = "Dashboard";
             dashboardToolStripMenuItem.Click += dashboardToolStripMenuItem_Click;
             // 
             // definitionsToolStripMenuItem
             // 
             definitionsToolStripMenuItem.Name = "definitionsToolStripMenuItem";
-            definitionsToolStripMenuItem.Size = new Size(137, 22);
+            definitionsToolStripMenuItem.Size = new Size(138, 22);
             definitionsToolStripMenuItem.Text = "Terminologi";
             definitionsToolStripMenuItem.Click += definitionsToolStripMenuItem_Click;
             // 
             // logoutToolStripMenuItem
             // 
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(137, 22);
+            logoutToolStripMenuItem.Size = new Size(138, 22);
             logoutToolStripMenuItem.Text = "Logout";
             logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
             // 
@@ -104,12 +104,13 @@
             savingToolStripMenuItem.Name = "savingToolStripMenuItem";
             savingToolStripMenuItem.Size = new Size(54, 20);
             savingToolStripMenuItem.Text = "Saving";
+            savingToolStripMenuItem.Click += savingToolStripMenuItem_Click;
             // 
             // transferToolStripMenuItem
             // 
             transferToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { inhouseToolStripMenuItem, acrossCooperationToolStripMenuItem });
             transferToolStripMenuItem.Name = "transferToolStripMenuItem";
-            transferToolStripMenuItem.Size = new Size(60, 20);
+            transferToolStripMenuItem.Size = new Size(61, 20);
             transferToolStripMenuItem.Text = "Transfer";
             // 
             // inhouseToolStripMenuItem
@@ -128,7 +129,7 @@
             // exchangeToolStripMenuItem
             // 
             exchangeToolStripMenuItem.Name = "exchangeToolStripMenuItem";
-            exchangeToolStripMenuItem.Size = new Size(70, 20);
+            exchangeToolStripMenuItem.Size = new Size(69, 20);
             exchangeToolStripMenuItem.Text = "Exchange";
             exchangeToolStripMenuItem.Click += exchangeToolStripMenuItem_Click;
             // 
@@ -140,16 +141,17 @@
             // 
             // panelDisplay
             // 
-            panelDisplay.Location = new Point(0, 27);
+            panelDisplay.Dock = DockStyle.Fill;
+            panelDisplay.Location = new Point(0, 24);
             panelDisplay.Name = "panelDisplay";
-            panelDisplay.Size = new Size(800, 426);
+            panelDisplay.Size = new Size(1051, 506);
             panelDisplay.TabIndex = 1;
             // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1051, 530);
             Controls.Add(panelDisplay);
             Controls.Add(menuHome);
             MainMenuStrip = menuHome;

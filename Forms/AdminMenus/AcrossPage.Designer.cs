@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             dgvCoop = new DataGridView();
-            Code = new DataGridViewTextBoxColumn();
-            Name = new DataGridViewTextBoxColumn();
-            Address = new DataGridViewTextBoxColumn();
             dgvBalance = new DataGridView();
             npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
             dgvTransfer = new DataGridView();
@@ -39,6 +36,9 @@
             label2 = new Label();
             label3 = new Label();
             buttonRefresh = new Button();
+            Code = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Address = new DataGridViewTextBoxColumn();
             MemberCode = new DataGridViewTextBoxColumn();
             MemberName = new DataGridViewTextBoxColumn();
             Balance = new DataGridViewTextBoxColumn();
@@ -57,37 +57,22 @@
             // 
             dgvCoop.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCoop.Columns.AddRange(new DataGridViewColumn[] { Code, Name, Address });
-            dgvCoop.Location = new Point(22, 38);
+            dgvCoop.Location = new Point(47, 43);
             dgvCoop.Margin = new Padding(3, 2, 3, 2);
             dgvCoop.Name = "dgvCoop";
             dgvCoop.RowHeadersWidth = 51;
-            dgvCoop.Size = new Size(446, 171);
+            dgvCoop.Size = new Size(443, 171);
             dgvCoop.TabIndex = 0;
-            // 
-            // Code
-            // 
-            Code.HeaderText = "Code";
-            Code.Name = "Code";
-            // 
-            // Name
-            // 
-            Name.HeaderText = "Name";
-            Name.Name = "Name";
-            // 
-            // Address
-            // 
-            Address.HeaderText = "Address";
-            Address.Name = "Address";
             // 
             // dgvBalance
             // 
             dgvBalance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvBalance.Columns.AddRange(new DataGridViewColumn[] { MemberCode, MemberName, Balance });
-            dgvBalance.Location = new Point(473, 38);
+            dgvBalance.Location = new Point(518, 43);
             dgvBalance.Margin = new Padding(3, 2, 3, 2);
             dgvBalance.Name = "dgvBalance";
             dgvBalance.RowHeadersWidth = 51;
-            dgvBalance.Size = new Size(353, 171);
+            dgvBalance.Size = new Size(383, 171);
             dgvBalance.TabIndex = 1;
             // 
             // npgsqlDataAdapter1
@@ -101,17 +86,17 @@
             // 
             dgvTransfer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTransfer.Columns.AddRange(new DataGridViewColumn[] { TransferCode, CoopCode, CodeOrigin, CodeBenef, Amount, Remarks });
-            dgvTransfer.Location = new Point(22, 244);
+            dgvTransfer.Location = new Point(47, 249);
             dgvTransfer.Margin = new Padding(3, 2, 3, 2);
             dgvTransfer.Name = "dgvTransfer";
             dgvTransfer.RowHeadersWidth = 51;
-            dgvTransfer.Size = new Size(804, 138);
+            dgvTransfer.Size = new Size(854, 138);
             dgvTransfer.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(22, 21);
+            label1.Location = new Point(47, 26);
             label1.Name = "label1";
             label1.Size = new Size(36, 15);
             label1.TabIndex = 3;
@@ -120,7 +105,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(473, 21);
+            label2.Location = new Point(525, 26);
             label2.Name = "label2";
             label2.Size = new Size(52, 15);
             label2.TabIndex = 4;
@@ -129,7 +114,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(22, 227);
+            label3.Location = new Point(47, 232);
             label3.Name = "label3";
             label3.Size = new Size(49, 15);
             label3.TabIndex = 5;
@@ -137,13 +122,31 @@
             // 
             // buttonRefresh
             // 
-            buttonRefresh.Location = new Point(386, 397);
+            buttonRefresh.Location = new Point(440, 398);
             buttonRefresh.Margin = new Padding(3, 2, 3, 2);
             buttonRefresh.Name = "buttonRefresh";
             buttonRefresh.Size = new Size(82, 22);
             buttonRefresh.TabIndex = 6;
             buttonRefresh.Text = "Refresh";
             buttonRefresh.UseVisualStyleBackColor = true;
+            // 
+            // Code
+            // 
+            Code.HeaderText = "Code";
+            Code.Name = "Code";
+            Code.Width = 90;
+            // 
+            // Name
+            // 
+            Name.HeaderText = "Name";
+            Name.Name = "Name";
+            Name.Width = 150;
+            // 
+            // Address
+            // 
+            Address.HeaderText = "Address";
+            Address.Name = "Address";
+            Address.Width = 150;
             // 
             // MemberCode
             // 
@@ -154,6 +157,7 @@
             // 
             MemberName.HeaderText = "Member Name";
             MemberName.Name = "MemberName";
+            MemberName.Width = 130;
             // 
             // Balance
             // 
@@ -189,6 +193,7 @@
             // 
             Remarks.HeaderText = "Remarks";
             Remarks.Name = "Remarks";
+            Remarks.Width = 300;
             // 
             // AcrossPage
             // 
@@ -201,7 +206,7 @@
             Controls.Add(dgvTransfer);
             Controls.Add(dgvBalance);
             Controls.Add(dgvCoop);
-            Size = new Size(863, 431);
+            Size = new Size(950, 450);
             Load += AcrossPage_Load;
             ((System.ComponentModel.ISupportInitialize)dgvCoop).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvBalance).EndInit();

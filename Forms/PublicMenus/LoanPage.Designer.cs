@@ -83,7 +83,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(25, 86);
             label2.Name = "label2";
-            label2.Size = new Size(60, 15);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 1;
             label2.Text = "Loan Type";
             // 
@@ -220,7 +220,7 @@
             label10.AutoSize = true;
             label10.Location = new Point(253, 144);
             label10.Name = "label10";
-            label10.Size = new Size(36, 15);
+            label10.Size = new Size(37, 15);
             label10.TabIndex = 17;
             label10.Text = "Tenor";
             // 
@@ -229,7 +229,7 @@
             label11.AutoSize = true;
             label11.Location = new Point(253, 199);
             label11.Name = "label11";
-            label11.Size = new Size(77, 15);
+            label11.Size = new Size(76, 15);
             label11.TabIndex = 18;
             label11.Text = "Max Amount";
             // 
@@ -238,7 +238,7 @@
             label12.AutoSize = true;
             label12.Location = new Point(253, 255);
             label12.Name = "label12";
-            label12.Size = new Size(86, 15);
+            label12.Size = new Size(87, 15);
             label12.TabIndex = 19;
             label12.Text = "Document KTP";
             // 
@@ -293,7 +293,7 @@
             // 
             // buttonBrowseKK
             // 
-            buttonBrowseKK.Location = new Point(20, 424);
+            buttonBrowseKK.Location = new Point(20, 413);
             buttonBrowseKK.Name = "buttonBrowseKK";
             buttonBrowseKK.Size = new Size(75, 23);
             buttonBrowseKK.TabIndex = 26;
@@ -303,7 +303,7 @@
             // 
             // buttonShowKK
             // 
-            buttonShowKK.Location = new Point(141, 424);
+            buttonShowKK.Location = new Point(141, 413);
             buttonShowKK.Name = "buttonShowKK";
             buttonShowKK.Size = new Size(75, 23);
             buttonShowKK.TabIndex = 27;
@@ -313,7 +313,7 @@
             // 
             // buttonBrowseKTP
             // 
-            buttonBrowseKTP.Location = new Point(243, 310);
+            buttonBrowseKTP.Location = new Point(243, 306);
             buttonBrowseKTP.Name = "buttonBrowseKTP";
             buttonBrowseKTP.Size = new Size(75, 23);
             buttonBrowseKTP.TabIndex = 28;
@@ -323,7 +323,7 @@
             // 
             // buttonShowKTP
             // 
-            buttonShowKTP.Location = new Point(364, 310);
+            buttonShowKTP.Location = new Point(364, 306);
             buttonShowKTP.Name = "buttonShowKTP";
             buttonShowKTP.Size = new Size(75, 23);
             buttonShowKTP.TabIndex = 29;
@@ -333,7 +333,7 @@
             // 
             // buttonBrowseSlipGaji
             // 
-            buttonBrowseSlipGaji.Location = new Point(243, 424);
+            buttonBrowseSlipGaji.Location = new Point(243, 413);
             buttonBrowseSlipGaji.Name = "buttonBrowseSlipGaji";
             buttonBrowseSlipGaji.Size = new Size(75, 23);
             buttonBrowseSlipGaji.TabIndex = 30;
@@ -343,7 +343,7 @@
             // 
             // buttonShowSlipGaji
             // 
-            buttonShowSlipGaji.Location = new Point(364, 424);
+            buttonShowSlipGaji.Location = new Point(364, 413);
             buttonShowSlipGaji.Name = "buttonShowSlipGaji";
             buttonShowSlipGaji.Size = new Size(75, 23);
             buttonShowSlipGaji.TabIndex = 31;
@@ -352,18 +352,18 @@
             // 
             // buttonApplyLoan
             // 
-            buttonApplyLoan.Location = new Point(75, 505);
+            buttonApplyLoan.Location = new Point(65, 454);
             buttonApplyLoan.Name = "buttonApplyLoan";
-            buttonApplyLoan.Size = new Size(141, 23);
+            buttonApplyLoan.Size = new Size(151, 28);
             buttonApplyLoan.TabIndex = 32;
             buttonApplyLoan.Text = "Apply Loan";
             buttonApplyLoan.UseVisualStyleBackColor = true;
             // 
             // buttonNewLoan
             // 
-            buttonNewLoan.Location = new Point(243, 505);
+            buttonNewLoan.Location = new Point(243, 454);
             buttonNewLoan.Name = "buttonNewLoan";
-            buttonNewLoan.Size = new Size(141, 23);
+            buttonNewLoan.Size = new Size(151, 28);
             buttonNewLoan.TabIndex = 33;
             buttonNewLoan.Text = "New Loan";
             buttonNewLoan.UseVisualStyleBackColor = true;
@@ -380,7 +380,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(483, 30);
+            label15.Location = new Point(503, 30);
             label15.Name = "label15";
             label15.Size = new Size(33, 15);
             label15.TabIndex = 35;
@@ -388,7 +388,7 @@
             // 
             // buttonReload
             // 
-            buttonReload.Location = new Point(610, 505);
+            buttonReload.Location = new Point(696, 413);
             buttonReload.Name = "buttonReload";
             buttonReload.Size = new Size(141, 23);
             buttonReload.TabIndex = 36;
@@ -399,9 +399,9 @@
             // dataGridLoan
             // 
             dataGridLoan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridLoan.Location = new Point(472, 48);
+            dataGridLoan.Location = new Point(503, 48);
             dataGridLoan.Name = "dataGridLoan";
-            dataGridLoan.Size = new Size(503, 399);
+            dataGridLoan.Size = new Size(503, 339);
             dataGridLoan.TabIndex = 37;
             // 
             // LoanPage
@@ -447,7 +447,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "LoanPage";
-            Size = new Size(990, 556);
+            Size = new Size(1050, 500);
             Load += LoanPage_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridLoan).EndInit();
             ResumeLayout(false);
