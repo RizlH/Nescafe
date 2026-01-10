@@ -156,7 +156,7 @@
             Controls.Add(menuHome);
             MainMenuStrip = menuHome;
             Name = "HomeForm";
-            Text = "Brave Hero Cooperation";
+            Text = "Nescafe";
             WindowState = FormWindowState.Maximized;
             Load += HomeForm_Load;
             menuHome.ResumeLayout(false);

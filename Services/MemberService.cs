@@ -35,10 +35,10 @@ namespace Nescafe.Services
             return _db.Members.OrderByDescending(m => m.ModDate).ToList<Member>();
         }
 
-        public async void Update(Member member)
+        public void Update(Member member)
         {
             _db.Members.Update(member);
-            await _db.SaveChangesAsync();
+            _db.SaveChanges();
         }
     }
 }

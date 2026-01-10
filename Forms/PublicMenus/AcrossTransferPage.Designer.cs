@@ -64,6 +64,7 @@
             // 
             textBalance.Location = new Point(105, 97);
             textBalance.Name = "textBalance";
+            textBalance.ReadOnly = true;
             textBalance.Size = new Size(209, 23);
             textBalance.TabIndex = 1;
             // 
